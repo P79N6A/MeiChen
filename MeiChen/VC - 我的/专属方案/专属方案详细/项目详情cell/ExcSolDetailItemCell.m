@@ -6,15 +6,15 @@
 //  Copyright © 2019年 yangfeng. All rights reserved.
 //
 
-#import "PlanItemCell.h"
+#import "ExcSolDetailItemCell.h"
 
-@implementation PlanItemCell
+@implementation ExcSolDetailItemCell
 
 + (instancetype)cellWithTableView:(UITableView *)tableview {
     static NSString *identifier = @"Cell";
-    PlanItemCell *cell = [tableview dequeueReusableCellWithIdentifier:identifier];
+    ExcSolDetailItemCell *cell = [tableview dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"PlanItemCell" owner:nil options:nil] firstObject];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"ExcSolDetailItemCell" owner:nil options:nil] firstObject];
     }
     return cell;
 }

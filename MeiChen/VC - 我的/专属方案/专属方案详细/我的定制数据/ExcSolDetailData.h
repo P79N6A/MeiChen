@@ -20,7 +20,7 @@
 
 @end
 
-@interface MyPlanData : NSObject
+@interface ExcSolDetailData : NSObject
 @property (nonatomic, weak)id<MyPlanDataDelegate> delegate;
 @property (nonatomic, strong) PlanDetailModel *model;
 #pragma mark - 下载定制详情

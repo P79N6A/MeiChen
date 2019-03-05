@@ -381,7 +381,7 @@
 }
 @end
 
-#pragma mark - 定制列表数据 - 定制详细
+#pragma mark - 专属方案数据 - 专属方案详细
 @implementation PlanDetailModel
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"title":@"title",
@@ -416,7 +416,7 @@
 }
 @end
 
-#pragma mark - 定制列表数据 - 定制详细 - item
+#pragma mark - 专属方案数据 - 专属方案详细 - item
 @implementation PlanDetailItem
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"order_id":@"order_id",
@@ -431,7 +431,7 @@
 }
 @end
 
-#pragma mark - 定制列表数据 - 定制详细 - card_calc
+#pragma mark - 专属方案数据 - 专属方案详细 - card_calc
 @implementation PlanDetailCardCalc
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"remark":@"remark",
@@ -441,7 +441,7 @@
 }
 @end
 
-#pragma mark - 定制列表数据 - 定制详细 - coupons
+#pragma mark - 专属方案数据 - 专属方案详细 - coupons
 @implementation PlanDetailCoupons
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"get_id":@"get_id",
@@ -462,7 +462,7 @@
 @end
 
 
-#pragma mark - 定制列表数据 - 定制详细 - coupons
+#pragma mark - 专属方案数据 - 专属方案详细 - coupons
 @implementation PlanDetailCouponsCoupon
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"coupon_id":@"coupon_id",
@@ -480,7 +480,7 @@
 }
 @end
 
-#pragma mark - 定制列表数据 - 定制详细 - coupon_calc
+#pragma mark - 专属方案数据 - 专属方案详细 - coupon_calc
 @implementation PlanDetailCouponCalc
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{@"remark":@"remark",

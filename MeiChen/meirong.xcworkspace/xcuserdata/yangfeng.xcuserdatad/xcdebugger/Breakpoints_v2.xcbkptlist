@@ -541,7 +541,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VC - &#x63a8;&#x8350;&#x9996;&#x9875;/&#x63a8;&#x8350;&#x9996;&#x9875; - VC/RecommendHomePageVC.m"
-            timestampString = "573464911.709726"
+            timestampString = "573470575.781119"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
@@ -557,7 +557,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VC - &#x63a8;&#x8350;&#x9996;&#x9875;/&#x63a8;&#x8350;&#x9996;&#x9875; - VC/RecommendHomePageVC.m"
-            timestampString = "573464911.709933"
+            timestampString = "573470575.781298"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "113"
@@ -572,56 +572,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x6570;&#x636e;&#x4e2d;&#x5fc3; - Data/&#x6570;&#x636e;&#x6a21;&#x578b;Model/RecommendModel.h"
-            timestampString = "573464911.7099921"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "251"
-            endingLineNumber = "251"
-            landmarkName = "PlanDetailModel"
-            landmarkType = "2">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[PlanDetailModel list]"
-                  moduleName = "meirong"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yangfeng/Desktop/%E5%BF%83%E6%82%A6%E7%BE%8E%E8%87%A3%E9%A1%B9%E7%9B%AE%2020181210/MeiChenSourceCode/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20-%20Data/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8BModel/RecommendModel.h"
-                  timestampString = "573358061.229902"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "252"
-                  endingLineNumber = "252"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[PlanDetailModel setList:]"
-                  moduleName = "meirong"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yangfeng/Desktop/%E5%BF%83%E6%82%A6%E7%BE%8E%E8%87%A3%E9%A1%B9%E7%9B%AE%2020181210/MeiChenSourceCode/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20-%20Data/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8BModel/RecommendModel.h"
-                  timestampString = "573358061.232515"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "252"
-                  endingLineNumber = "252"
-                  offsetFromSymbolStart = "64">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "&#x6570;&#x636e;&#x4e2d;&#x5fc3; - Data/&#x6570;&#x636e;&#x6a21;&#x578b;Model/RecommendModel.m"
-            timestampString = "573464911.7106709"
+            timestampString = "573470575.781392"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "385"
@@ -636,46 +588,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x6570;&#x636e;&#x4e2d;&#x5fc3; - Data/&#x6570;&#x636e;&#x6a21;&#x578b;Model/RecommendModel.h"
-            timestampString = "573464911.7109931"
+            filePath = "VC - &#x6211;&#x7684;/&#x6211;&#x7684;&#x5b9a;&#x5236;/&#x6211;&#x7684;&#x5b9a;&#x5236; - VC/MyPlanVC.m"
+            timestampString = "573464911.711414"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "316"
-            endingLineNumber = "316"
-            landmarkName = "card_id"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[PlanDetailCouponCalc val]"
-                  moduleName = "meirong"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yangfeng/Desktop/%E5%BF%83%E6%82%A6%E7%BE%8E%E8%87%A3%E9%A1%B9%E7%9B%AE%2020181210/MeiChenSourceCode/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20-%20Data/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8BModel/RecommendModel.h"
-                  timestampString = "573378935.052123"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "317"
-                  endingLineNumber = "317"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[PlanDetailCouponCalc setVal:]"
-                  moduleName = "meirong"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yangfeng/Desktop/%E5%BF%83%E6%82%A6%E7%BE%8E%E8%87%A3%E9%A1%B9%E7%9B%AE%2020181210/MeiChenSourceCode/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20-%20Data/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8BModel/RecommendModel.h"
-                  timestampString = "573378935.0546499"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "317"
-                  endingLineNumber = "317"
-                  offsetFromSymbolStart = "64">
-               </Location>
-            </Locations>
+            startingLineNumber = "243"
+            endingLineNumber = "243">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -684,13 +602,61 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VC - &#x6211;&#x7684;/&#x6211;&#x7684;&#x5b9a;&#x5236;/&#x6211;&#x7684;&#x5b9a;&#x5236; - VC/MyPlanVC.m"
-            timestampString = "573464911.711414"
+            filePath = "&#x6570;&#x636e;&#x4e2d;&#x5fc3; - Data/&#x6570;&#x636e;&#x6a21;&#x578b;Model/RecommendModel.h"
+            timestampString = "573472257.582999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "243"
-            endingLineNumber = "243"
-            landmarkName = "-ButtonMethod:"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
+            landmarkName = "item"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[PlanDetailModel item]"
+                  moduleName = "meirong"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yangfeng/Desktop/github/MeiChen/MeiChen/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20-%20Data/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8BModel/RecommendModel.h"
+                  timestampString = "573472257.818751"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "260"
+                  endingLineNumber = "260"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[PlanDetailModel setItem:]"
+                  moduleName = "meirong"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yangfeng/Desktop/github/MeiChen/MeiChen/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20-%20Data/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8BModel/RecommendModel.h"
+                  timestampString = "573472257.820895"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "260"
+                  endingLineNumber = "260"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VC - &#x6211;&#x7684;/&#x6211;&#x7684;&#x5b9a;&#x5236;/&#x6211;&#x7684;&#x5b9a;&#x5236; - VC/MyPlanVC.m"
+            timestampString = "573472955.535267"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "-ParsingPlanDetailData:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -20,7 +20,7 @@
 #import "PlanCustomizeVC.h"     // 定制控制器
 
 #import "WatingPlanVC.h"
-#import "MyPlanVC.h"
+#import "ExcSolDetailVC.h"
 
 @interface RecommendHomePageVC () <CustomHomeNavViewDelegate, RecommendHomePageDataDelegate, UICollectionViewDelegate, ZanDataDelegate>
 

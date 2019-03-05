@@ -7,7 +7,7 @@
 //
 
 #import "ExcSolDetailVC.h"
-#import "ExcSolDetailCell.h"
+#import "ExcSolDetailItemCell.h"
 #import "ExcSolDetailData.h"
 #import "MyPlanView_3.h"
 #import "MyPlanView_4.h"
@@ -24,7 +24,7 @@
 @property (nonatomic, strong) MyPlanView_3 *view_3;
 @property (nonatomic, strong) MyPlanView_4 *view_4;
 
-@property (nonatomic, strong) MyPlanData *data;
+@property (nonatomic, strong) ExcSolDetailData *data;
 @property (nonatomic, copy) NSArray *selectArr;
 @end
 
@@ -32,7 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.data = [[MyPlanData alloc]init];
+    self.data = [[ExcSolDetailData alloc]init];
     self.data.delegate = self;
     [self.data requestMyPlanDetailWithOrder_id:self.order_id];
     [self CreateUI];
@@ -201,7 +201,7 @@
     return self.data.model.item.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    PlanItemCell *cell = [PlanItemCell cellWithTableView:tableView];
+    ExcSolDetailItemCell *cell = [ExcSolDetailItemCell cellWithTableView:tableView];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     PlanDetailItem *item = self.data.model.item[indexPath.row];
     [cell loadDataWithIndexPath:indexPath item:item];

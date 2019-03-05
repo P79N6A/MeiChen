@@ -8,7 +8,7 @@
 
 #import "ExcSolVC.h"
 #import "ExcSolCell.h"
-#import "MyPlanVC.h"
+#import "ExcSolDetailVC.h"
 @interface ExcSolVC () <CustomNavViewDelegate,UITableViewDelegate, UITableViewDataSource> {
     NetWork *net;
 }
@@ -60,7 +60,7 @@
 }
 
 - (void)YuYueMethod:(UIButton *)sender {
-    MyPlanVC *vc = [[MyPlanVC alloc]init];
+    ExcSolDetailVC *vc = [[ExcSolDetailVC alloc]init];
     OrderListModel *model = self.list.data[sender.tag];
     vc.order_id = model.order_id;
     vc.titleStr = NSLocalizedString(@"MyPlanVC_19", nil);

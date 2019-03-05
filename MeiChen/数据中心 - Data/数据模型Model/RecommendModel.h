@@ -245,7 +245,7 @@
 @property (nonatomic, strong) NSString *booking_num;
 @end
 
-#pragma mark - 定制列表数据 - 定制详细
+#pragma mark - 专属方案数据 - 专属方案详细
 @class PlanDetailListModel;
 @class PlanCardModel;
 @interface PlanDetailModel : MTLModel <MTLJSONSerializing>
@@ -267,7 +267,7 @@
 @property (nonatomic) NSInteger total_price;
 @end
 
-#pragma mark - 定制列表数据 - 定制详细 - item
+#pragma mark - 专属方案数据 - 专属方案详细 - item
 @interface PlanDetailItem : MTLModel <MTLJSONSerializing>
 @property (nonatomic, strong) NSString *order_id;
 @property (nonatomic, strong) NSString *item_id;
@@ -279,14 +279,14 @@
 @property (nonatomic, strong) NSString *cover_img;
 @end
 
-#pragma mark - 定制列表数据 - 定制详细 - card_calc
+#pragma mark - 专属方案数据 - 专属方案详细 - card_calc
 @interface PlanDetailCardCalc : MTLModel <MTLJSONSerializing>
 @property (nonatomic, strong) NSString *remark;
 @property (nonatomic, strong) NSString *key;
 @property (nonatomic, strong) NSString *val;
 @end
 
-#pragma mark - 定制列表数据 - 定制详细 - coupons
+#pragma mark - 专属方案数据 - 专属方案详细 - coupons
 @class PlanDetailCouponsCoupon;
 @interface PlanDetailCoupons : MTLModel <MTLJSONSerializing>
 @property (nonatomic, strong) NSString *get_id;
@@ -301,7 +301,7 @@
 @property (nonatomic, strong) NSString *is_gray;
 @end
 
-#pragma mark - 定制列表数据 - 定制详细 - coupons
+#pragma mark - 专属方案数据 - 专属方案详细 - coupons
 @interface PlanDetailCouponsCoupon : MTLModel <MTLJSONSerializing>
 @property (nonatomic, strong) NSString *coupon_id;
 @property (nonatomic, strong) NSString *title;
@@ -316,7 +316,7 @@
 @property (nonatomic, strong) NSString *card_id;
 @end
 
-#pragma mark - 定制列表数据 - 定制详细 - coupon_calc
+#pragma mark - 专属方案数据 - 专属方案详细 - coupon_calc
 @interface PlanDetailCouponCalc : MTLModel <MTLJSONSerializing>
 @property (nonatomic, strong) NSString *remark;
 @property (nonatomic, strong) NSString *key;

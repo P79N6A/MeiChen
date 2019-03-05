@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlanItemCell : UITableViewCell
+@interface ExcSolDetailItemCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *icon;
 @property (weak, nonatomic) IBOutlet UILabel *lab_1;

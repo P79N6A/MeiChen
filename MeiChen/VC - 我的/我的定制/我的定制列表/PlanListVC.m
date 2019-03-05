@@ -11,7 +11,6 @@
 #import "PlanListCell.h"
 #import "MyPlanVC.h"
 
-
 @interface PlanListVC () <CustomNavViewDelegate,PlanListDataDelegate,UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) CustomNavView *navview;
@@ -57,11 +56,10 @@
 
 #pragma mark - UITableViewDataSource
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"tag = %ld, row = %ld",tableView.tag, indexPath.row);
-    MyPlanVC *vc = [[MyPlanVC alloc]init];
     SinglePlanModel *model = [self.data ItemWithRow:indexPath.row];
-    vc.order_id = model.imitate_id;
-    vc.titleStr = NSLocalizedString(@"MyPlanVC_1", nil);
+    
+    MyPlanVC *vc = [[MyPlanVC alloc]init];
+    vc.imitate_id = model.imitate_id;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

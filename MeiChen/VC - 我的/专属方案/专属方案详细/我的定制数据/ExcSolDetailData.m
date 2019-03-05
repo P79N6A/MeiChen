@@ -6,16 +6,16 @@
 //  Copyright © 2019年 yangfeng. All rights reserved.
 //
 
-#import "MyPlanData.h"
+#import "ExcSolDetailData.h"
 
-@interface MyPlanData () {
+@interface ExcSolDetailData () {
     NSInteger OnePageCount;     // 每页的数据个数
     NetWork *net;
 }
 
 @end
 
-@implementation MyPlanData
+@implementation ExcSolDetailData
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -101,15 +101,12 @@
             }
             case 1: {
                 PlanDetailModel *model = [MTLJSONAdapter modelOfClass:[PlanDetailModel class] fromJSONDictionary:responseObject[@"data"] error:nil];
-                if (model == nil) {
-                    NSLog(@"model == nil");
+                if (model != nil) {
+                    self.model = model;
+//                    self.model = [self settingModel:model];
                     [self DownLoadMyPlanDetailSuccess];
                     return;
                 }
-                self.model = model;
-//                self.model = [self settingModel:model];
-                [self DownLoadMyPlanDetailSuccess];
-                return;
                 break;
             }
             default:
