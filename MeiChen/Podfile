@@ -1,0 +1,29 @@
+platform :ios, ’10.0’
+
+use_frameworks!
+
+target ‘meirong’ do
+
+pod 'AFNetworking'
+pod 'SVProgressHUD'
+pod 'SDWebImage'
+# 阿里云OSS
+pod 'AliyunOSSiOS'
+# 微信SDK
+pod 'WechatOpenSDK'
+# 友盟SDK依赖库
+pod 'UMCCommon'
+pod 'UMCSecurityPlugins'
+# 友盟统计
+pod 'UMCAnalytics'
+# 主要用来将 JSON 数据模型化为 Model 对象
+pod 'Mantle'
+
+pod 'ByronMethodKit'
+
+pod 'DXPopover'
+
+pod 'MJRefresh'
+
+
+end

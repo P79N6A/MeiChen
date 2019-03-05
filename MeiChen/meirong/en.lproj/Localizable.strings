@@ -1,0 +1,444 @@
+/* 
+  Localizable.strings
+  meirong
+
+  Created by yangfeng on 2018/12/10.
+  Copyright © 2018年 yangfeng. All rights reserved.
+*/
+
+// 提示信息
+"svp_1" = "服务器开小差了，请稍后再试！";
+"svp_2" = "服务器类型返回错误";
+"svp_3" = "用户登录信息过期，请重新登录";
+
+// 提示框
+"alert_1" = "确定";
+"alert_2" = "微信应用程序没有安装";
+"alert_3" = "若更换部位则之前选择的照片将会被取消，目前只支持选择一个部位";
+"alert_4" = "提示";
+"alert_5" = "继续";
+"alert_6" = "取消";
+"alert_7" = "";
+"alert_8" = "";
+"alert_9" = "";
+"alert_10" = "";
+
+
+// 登录/注册
+"login_1" = "登录/注册";
+"login_2" = "输入手机号码";
+"login_3" = "获取验证码";
+"login_4" = "重新获取";
+"login_5" = "登录";
+"login_6" = "第三方登录";
+"login_7" = "验证码";
+"login_8" = "";
+"login_9" = "";
+"login_10" = "";
+"login_11" = "";
+"login_12" = "";
+"login_13" = "";
+"login_14" = "";
+"login_15" = "";
+"login_16" = "";
+"login_17" = "";
+"login_18" = "";
+"login_19" = "";
+
+
+// 推荐页面
+"tuijian_1" = "热门";
+"tuijian_2" = "万";
+"tuijian_3" = "";
+"tuijian_4" = "";
+"tuijian_5" = "";
+"tuijian_6" = "";
+"tuijian_7" = "搜索 项目/医生";
+"tuijian_8" = "";
+"tuijian_9" = "";
+"tuijian_10" = "";
+"tuijian_11" = "";
+"tuijian_12" = "";
+"tuijian_13" = "";
+"tuijian_14" = "";
+"tuijian_15" = "";
+"tuijian_16" = "";
+"tuijian_17" = "";
+"tuijian_18" = "";
+"tuijian_19" = "";
+"tuijian_20" = "";
+"tuijian_21" = "";
+"tuijian_22" = "";
+"tuijian_23" = "";
+
+
+// 搜索历史
+"SearchHistoty_1" = "取消";
+"SearchHistoty_2" = "历史搜索";
+"SearchHistoty_3" = "热门搜索";
+"SearchHistoty_4" = "历史记录已清除";
+"SearchHistoty_5" = "";
+"SearchHistoty_6" = "";
+"SearchHistoty_7" = "";
+"SearchHistoty_8" = "";
+"SearchHistoty_9" = "";
+"SearchHistoty_10" = "";
+"SearchHistoty_11" = "";
+"SearchHistoty_12" = "";
+"SearchHistoty_13" = "";
+"SearchHistoty_14" = "";
+"SearchHistoty_15" = "";
+"SearchHistoty_16" = "";
+"SearchHistoty_17" = "";
+"SearchHistoty_18" = "";
+"SearchHistoty_19" = "";
+
+// 分类
+"TypeVC_1" = "全部分类";
+"TypeVC_2" = "";
+"TypeVC_3" = "";
+"TypeVC_4" = "";
+"TypeVC_5" = "";
+"TypeVC_6" = "";
+
+// 案例详情页
+"CaseDetailVC_1" = "美丽日记";
+"CaseDetailVC_2" = "项目名称";
+"CaseDetailVC_3" = "变美时间";
+"CaseDetailVC_4" = "以前的我";
+"CaseDetailVC_5" = "变美过程";
+"CaseDetailVC_6" = "时间倒序";
+"CaseDetailVC_7" = "时间顺序";
+"CaseDetailVC_8" = "年";
+"CaseDetailVC_9" = "月";
+"CaseDetailVC_10" = "日";
+"CaseDetailVC_11" = "人已看";
+"CaseDetailVC_12" = "第";
+"CaseDetailVC_13" = "篇日记";
+"CaseDetailVC_14" = "预约同款";
+"CaseDetailVC_15" = "";
+"CaseDetailVC_16" = "";
+"CaseDetailVC_17" = "";
+"CaseDetailVC_18" = "";
+"CaseDetailVC_19" = "";
+
+// 评论页
+"ReviewVC_1" = "共";
+"ReviewVC_2" = "条评论";
+"ReviewVC_3" = "我来说两句...";
+"ReviewVC_4" = "发送";
+"ReviewVC_5" = "刚刚";
+"ReviewVC_6" = "分钟前";
+"ReviewVC_7" = "小时前";
+"ReviewVC_8" = "天前";
+"ReviewVC_9" = "很久以前";
+"ReviewVC_10" = "评论";
+"ReviewVC_11" = "回复";
+"ReviewVC_12" = "评论成功";
+"ReviewVC_13" = "回复成功";
+"ReviewVC_14" = "评论失败";
+"ReviewVC_15" = "回复失败";
+
+// 定制页面
+"PlanCustomizeVC_1" = "上传";
+"PlanCustomizeVC_2" = "选择风格";
+"PlanCustomizeVC_3" = "下一步";
+"PlanCustomizeVC_4" = "最多选择6张哦";
+"PlanCustomizeVC_" = "";
+"PlanCustomizeVC_" = "";
+"PlanCustomizeVC_" = "";
+"PlanCustomizeVC_" = "";
+"PlanCustomizeVC_" = "";
+
+// 相册页面
+"Photos_1" = "所有照片";
+"Photos_2" = "完成";
+"Photos_" = "";
+"Photos_" = "";
+"Photos_" = "";
+"Photos_" = "";
+"Photos_" = "";
+"Photos_" = "";
+
+
+// 上传照片页面
+"UploadImageVC_1" = "上传照片";
+"UploadImageVC_2" = "跳过";
+"UploadImageVC_4" = "需求说明";
+"UploadImageVC_5" = "请详细说明您其他的要求，方便我们的医生更加了解您";
+"UploadImageVC_6" = "示例";
+"UploadImageVC_7" = "方案生成";
+"UploadImageVC_8" = "整体";
+"UploadImageVC_9" = "拍照";
+"UploadImageVC_10" = "从手机相册选择";
+"UploadImageVC_11" = "取消";
+"UploadImageVC_12" = "跳过此步骤，将影响最终方案的准确性";
+"UploadImageVC_13" = "跳过";
+"UploadImageVC_14" = "取消";
+"UploadImageVC_15" = "请选择照片或者上传自拍";
+"UploadImageVC_16" = "请说明您的需求";
+"UploadImageVC_17" = "正面照";
+"UploadImageVC_18" = "请从面部正前方拍摄，确保完整呈现整体面部轮廓及五官";
+"UploadImageVC_19" = "今天已经提交过了，明天再来吧";
+
+
+
+// 相机界面
+"camcer_1" = "请打开相机权限";
+"camcer_2" = "设置-隐私-相机";
+"camcer_3" = "确定";
+"camcer_4" = "取消";
+"camcer_5" = "请打开相册权限";
+"camcer_6" = "设置-隐私-相册";
+"camcer_7" = "";
+"camcer_8" = "";
+"camcer_9" = "";
+"camcer_10" = "";
+"camcer_11" = "";
+"camcer_12" = "";
+"camcer_13" = "";
+"camcer_14" = "";
+"camcer_15" = "";
+"camcer_16" = "";
+
+
+
+// 方案生成中
+"WatingPlanVC_1" = "方案生成中";
+"WatingPlanVC_2" = "专家正在为您定制专属方案";
+"WatingPlanVC_3" = "等待倒计时";
+"WatingPlanVC_4" = "重新定制";
+"WatingPlanVC_5" = "医生正在为您制定方案中，确定取消吗？";
+"WatingPlanVC_6" = "确定";
+"WatingPlanVC_7" = "再等等";
+"WatingPlanVC_8" = "已有";
+"WatingPlanVC_9" = "名用户注册成为会员，其中";
+"WatingPlanVC_10" = "名会员通过专属方案成为更好的自己";
+"WatingPlanVC_11" = "小仙女们热情过于高涨，后台忙不过来啦\n请您再次提交，我们会尽快完成您的定制方案";
+
+
+
+// 我的定制
+"MyPlanVC_1" = "我的定制";
+"MyPlanVC_2" = "方案效果图";
+"MyPlanVC_3" = "推荐案例";
+"MyPlanVC_4" = "项目详情";
+"MyPlanVC_5" = "方案介绍";
+"MyPlanVC_6" = "立即预约";
+"MyPlanVC_7" = "您是尊贵的";
+"MyPlanVC_8" = "可享受";
+"MyPlanVC_9" = "价格";
+"MyPlanVC_10" = "会员折扣";
+"MyPlanVC_11" = "折";
+"MyPlanVC_12" = "积分折扣";
+"MyPlanVC_13" = "倍积分";
+"MyPlanVC_14" = "可用";
+"MyPlanVC_15" = "积分抵扣";
+"MyPlanVC_16" = "元";
+"MyPlanVC_17" = "本次可累积";
+"MyPlanVC_18" = "积分";
+"MyPlanVC_19" = "确认方案";
+"MyPlanVC_20" = "新人优惠券等共";
+"MyPlanVC_21" = "张";
+"MyPlanVC_22" = "留言";
+"MyPlanVC_23" = "告诉我们您的想法";
+"MyPlanVC_24" = "已优惠";
+"MyPlanVC_25" = "立即支付";
+"MyPlanVC_26" = "选择优惠券";
+"MyPlanVC_27" = "不使用优惠券";
+"MyPlanVC_28" = "确定";
+"MyPlanVC_29" = "";
+"MyPlanVC_30" = "";
+
+// 我的
+"MyVC_1" = "专属方案";
+"MyVC_2" = "我的服务";
+"MyVC_3" = "我的变美进程";
+"MyVC_4" = "我的会员";
+"MyVC_5" = "我的定制";
+"MyVC_6" = "我的预约";
+"MyVC_7" = "我的日记本";
+"MyVC_8" = "金融服务";
+"MyVC_9" = "设置";
+"MyVC_10" = "分析";
+"MyVC_11" = "术后效果";
+"MyVC_12" = "建议项目";
+"MyVC_13" = "立即预约";
+
+// 我的会员
+"MyCardVC_1" = "兑换";
+"MyCardVC_2" = "";
+"MyCardVC_3" = "";
+"MyCardVC_4" = "";
+"MyCardVC_5" = "";
+"MyCardVC_6" = "";
+"MyCardVC_7" = "";
+"MyCardVC_8" = "";
+"MyCardVC_9" = "";
+"MyCardVC_10" = "";
+"MyCardVC_11" = "";
+
+// 我的定制
+"PlanListVC_1" = "定制时间";
+"PlanListVC_2" = "已预约";
+"PlanListVC_3" = "万";
+"PlanListVC_4" = "您的专属方案";
+"PlanListVC_5" = "";
+"PlanListVC_6" = "";
+"PlanListVC_7" = "";
+"PlanListVC_8" = "";
+"PlanListVC_9" = "";
+"PlanListVC_10" = "";
+
+// 我的预约
+"MyOrderVC_1" = "我的预约";
+
+// 我的日记本
+"MyDiaryVC_1" = "我的日记本";
+"MyDiaryVC_2" = "创建新日记本";
+"MyDiaryVC_3" = "代写日记";
+"MyDiaryVC_4" = "已完成日记";
+"MyDiaryVC_5" = "空空如也~";
+"MyDiaryVC_6" = "发布";
+"MyDiaryVC_7" = "写日记";
+"MyDiaryVC_8" = "手术时间";
+"MyDiaryVC_9" = "手术项目";
+"MyDiaryVC_10" = "术前照片";
+"MyDiaryVC_11" = "主页展示图片";
+"MyDiaryVC_12" = "修改";
+"MyDiaryVC_13" = "记录新生活开始的第一天";
+"MyDiaryVC_14" = "+ 新增一篇日记";
+"MyDiaryVC_15" = "取消";
+"MyDiaryVC_16" = "确定";
+"MyDiaryVC_17" = "已选";
+"MyDiaryVC_18" = "选择项目";
+"MyDiaryVC_19" = "确定";
+"MyDiaryVC_20" = "篇日记";
+"MyDiaryVC_21" = "更新日记";
+"MyDiaryVC_23" = "已提交后台审核，审核通过后将发布到首页并发放积分";
+"MyDiaryVC_24" = "待审核";
+"MyDiaryVC_25" = "已通过";
+"MyDiaryVC_26" = "未通过";
+"MyDiaryVC_27" = "请完善手术项目";
+"MyDiaryVC_28" = "请完善术前照片";
+"MyDiaryVC_29" = "请完善主页展示图片";
+"MyDiaryVC_30" = "请完善日记内容";
+"MyDiaryVC_31" = "请完善日记照片";
+
+
+// 设置
+"SettingVC_1" = "设置";
+"SettingVC_2" = "用户名";
+"SettingVC_3" = "修改手机号";
+"SettingVC_4" = "修改密码";
+"SettingVC_5" = "清除缓存";
+"SettingVC_6" = "用户协议";
+"SettingVC_7" = "联系我们";
+"SettingVC_8" = "分享有礼";
+"SettingVC_9" = "退出登录";
+"SettingVC_10" = "头像";
+"SettingVC_11" = "红包拿不停";
+"SettingVC_12" = "请输入1~15位的用户名";
+"SettingVC_13" = "微信好友";
+"SettingVC_14" = "朋友圈";
+"SettingVC_15" = "微博";
+"SettingVC_16" = "QQ好友";
+"SettingVC_17" = "QQ空间";
+"SettingVC_18" = "分享至";
+
+// 修改用户名
+"ChangeNameVC_1" = "修改用户名";
+"ChangeNameVC_2" = "保存";
+"ChangeNameVC_3" = "用户名";
+"ChangeNameVC_4" = "";
+"ChangeNameVC_5" = "";
+"ChangeNameVC_6" = "";
+"ChangeNameVC_7" = "";
+
+
+// 修改手机号码
+"ChangePhone_1" = "修改手机号码";
+"ChangePhone_2" = "当前手机号码";
+"ChangePhone_3" = "新手机";
+"ChangePhone_4" = "验证码";
+"ChangePhone_5" = "获取验证码";
+"ChangePhone_6" = "请输入新的手机号码";
+"ChangePhone_7" = "请输入验证码";
+"ChangePhone_8" = "确定";
+
+// 我的分享
+"MyShareVC_1" = "我的分享";
+"MyShareVC_2" = "已获得推荐积分";
+"MyShareVC_3" = "已推荐人数";
+"MyShareVC_4" = "可分享项目";
+"MyShareVC_5" = "Hi,miss";
+"MyShareVC_6" = "Hi,ms";
+"MyShareVC_7" = "您是尊贵的";
+"MyShareVC_8" = "您还不是会员";
+"MyShareVC_9" = "积分";
+
+
+// 引荐管理
+"ExchangeVC_1" = "引荐管理";
+"ExchangeVC_2" = "兑换";
+"ExchangeVC_3" = "我的积分";
+"ExchangeVC_4" = "我的好友";
+"ExchangeVC_5" = "当前积分";
+"ExchangeVC_6" = "分";
+"ExchangeVC_7" = "积分详情";
+"ExchangeVC_8" = "手术项目";
+"ExchangeVC_9" = "总消费";
+"ExchangeVC_10" = "元";
+"ExchangeVC_11" = "积分";
+"ExchangeVC_12" = "已邀请";
+"ExchangeVC_13" = "人";
+"ExchangeVC_14" = "引荐";
+"ExchangeVC_15" = "已引荐";
+"ExchangeVC_16" = "";
+"ExchangeVC_17" = "";
+"ExchangeVC_18" = "";
+"ExchangeVC_19" = "";
+
+
+// 积分兑换
+"ExchangeJiFenVC_1" = "积分兑换";
+"ExchangeJiFenVC_2" = "记录";
+"ExchangeJiFenVC_3" = "可兑换积分";
+"ExchangeJiFenVC_4" = "兑换积分";
+"ExchangeJiFenVC_5" = "全部";
+"ExchangeJiFenVC_6" = "每次提交兑换积分数不得低于5000";
+"ExchangeJiFenVC_7" = "提现银行卡";
+"ExchangeJiFenVC_8" = "姓名";
+"ExchangeJiFenVC_9" = "卡号";
+"ExchangeJiFenVC_10" = "提交";
+
+"ExchangeJiFenVC_11" = "兑换记录";
+"ExchangeJiFenVC_12" = "兑换积分";
+"ExchangeJiFenVC_13" = "正在审核";
+"ExchangeJiFenVC_14" = "已兑换";
+"ExchangeJiFenVC_15" = "";
+"ExchangeJiFenVC_16" = "";
+"ExchangeJiFenVC_17" = "";
+"ExchangeJiFenVC_18" = "";
+"ExchangeJiFenVC_19" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

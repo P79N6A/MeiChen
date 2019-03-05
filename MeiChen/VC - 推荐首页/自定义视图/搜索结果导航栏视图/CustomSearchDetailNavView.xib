@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomSearchDetailNavView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="izx-PB-00f">
+                    <rect key="frame" x="40" y="20" width="335" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="6AW-dX-faV"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jz-zw-SUK">
+                    <rect key="frame" x="0.0" y="24" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="5nD-iK-sil"/>
+                        <constraint firstAttribute="height" constant="40" id="ZJv-3t-9om"/>
+                    </constraints>
+                    <state key="normal" image="返回"/>
+                    <connections>
+                        <action selector="BackButtonMehod:" destination="iN0-l3-epB" eventType="touchUpInside" id="phC-O3-rTl"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goc-tB-T3o">
+                    <rect key="frame" x="40" y="20" width="295" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="mLZ-XP-Fyh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVi-a0-9rP">
+                    <rect key="frame" x="0.0" y="63" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="GZe-rb-ocB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="goc-tB-T3o" secondAttribute="bottom" id="5ey-ua-Flx"/>
+                <constraint firstItem="goc-tB-T3o" firstAttribute="leading" secondItem="7jz-zw-SUK" secondAttribute="trailing" id="AJJ-kI-1WJ"/>
+                <constraint firstItem="kVi-a0-9rP" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="L6B-SP-c3d"/>
+                <constraint firstItem="izx-PB-00f" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="LBp-us-5Yg"/>
+                <constraint firstItem="7jz-zw-SUK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WGZ-Oq-lGp"/>
+                <constraint firstItem="kVi-a0-9rP" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Xdv-jC-c6G"/>
+                <constraint firstItem="izx-PB-00f" firstAttribute="leading" secondItem="7jz-zw-SUK" secondAttribute="trailing" id="bZA-aj-PCM"/>
+                <constraint firstItem="izx-PB-00f" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="fWh-Ze-6GX"/>
+                <constraint firstItem="kVi-a0-9rP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sxx-YB-cKD"/>
+                <constraint firstItem="7jz-zw-SUK" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="wjD-6q-JrO"/>
+                <constraint firstItem="goc-tB-T3o" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="xzN-KL-cyA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="back" destination="7jz-zw-SUK" id="CF9-tW-U9y"/>
+                <outlet property="line" destination="kVi-a0-9rP" id="bOT-Hc-Ax5"/>
+                <outlet property="searchBar" destination="izx-PB-00f" id="tVj-eQ-inm"/>
+                <outlet property="titleLab" destination="goc-tB-T3o" id="BMY-VM-QfX"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="返回" width="9" height="16"/>
+    </resources>
+</document>

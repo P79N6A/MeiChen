@@ -1,0 +1,6 @@
+framework module ByronMethodKit {
+  umbrella header "ByronMethodKit.h"
+
+  export *
+  module * { export * }
+}

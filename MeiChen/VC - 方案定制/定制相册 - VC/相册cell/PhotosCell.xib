@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotosCell">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fbk-nV-NbY">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                        <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igm-CV-Uje">
+                        <rect key="frame" x="61" y="61" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="4xL-x1-Ed5"/>
+                            <constraint firstAttribute="width" constant="24" id="DVv-7e-GzS"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="未选择">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" backgroundImage="选择背景"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="fbk-nV-NbY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7sT-Fa-2Qu"/>
+                <constraint firstAttribute="bottom" secondItem="fbk-nV-NbY" secondAttribute="bottom" id="Fvo-1B-Rgv"/>
+                <constraint firstAttribute="trailing" secondItem="fbk-nV-NbY" secondAttribute="trailing" id="dgw-Ho-XtD"/>
+                <constraint firstAttribute="trailing" secondItem="igm-CV-Uje" secondAttribute="trailing" constant="5" id="ld3-N1-uvG"/>
+                <constraint firstAttribute="bottom" secondItem="igm-CV-Uje" secondAttribute="bottom" constant="5" id="tey-Rt-S6M"/>
+                <constraint firstItem="fbk-nV-NbY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zUA-t9-MJD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <connections>
+                <outlet property="button" destination="igm-CV-Uje" id="AhE-u8-nVf"/>
+                <outlet property="icon" destination="fbk-nV-NbY" id="4ek-64-WQY"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="未选择" width="24" height="24"/>
+        <image name="选择背景" width="24" height="24"/>
+    </resources>
+</document>

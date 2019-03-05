@@ -1,0 +1,6 @@
+framework module Pods_meirong {
+  umbrella header "Pods-meirong-umbrella.h"
+
+  export *
+  module * { export * }
+}

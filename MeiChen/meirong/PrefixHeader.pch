@@ -1,0 +1,80 @@
+//
+//  PrefixHeader.pch
+//  meirong
+//
+//  Created by yangfeng on 2018/12/10.
+//  Copyright © 2018年 yangfeng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define CLog(format, ...)  NSLog(format, ## __VA_ARGS__)
+#define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+
+// 1、用户头文件
+#import "UserDefaults.h"
+#import "AFNetWork.h"
+#import "NetWork.h"
+#import "RecommendModel.h"
+#import "UserData.h"
+#import "CustomNavView.h"
+#import "Tools.h"
+#import "UIImage+ImgSize.h"
+
+#import "AliyunOSSUpload.h"
+
+#import "UIView+Cutter.h"
+#import "UIScrollView+Cutter.h"
+#import "imageBrowser.h"
+#import "ShowIcon.h"
+#import "FloatWindows.h"
+#import "EmptyView.h"
+#import "MJYFGifHeader.h"
+#import "MJYFGifFooter.h"
+
+
+// 2、第三方库/sdk头文件
+// 导入阿里云oss头文件
+#import <AliyunOSSiOS/AliyunOSSiOS.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <Mantle/Mantle.h>
+#import <ByronMethodKit/ByronMethodKit.h>
+#import <DXPopover/DXPopover.h>
+#import <UMCommon/UMCommon.h>
+
+// url @"http://dev.api.meichen.com/index.php?r="//
+#define BaseUrl @"http://39.108.79.218:8090/index.php?r="
+#define ENDPOINT @"https://oss-cn-shenzhen.aliyuncs.com"
+
+// 微信登录
+#define APPID @"wx1fc242128516895c"
+#define SECRET @"1695327b21ddf6eb02209c493256dd16"
+
+// 友盟统计
+#define UM_AppKey @"5c10bc8eb465f51ecf000322"
+
+// 阿里云
+#define ACCESSKEYID @""
+#define ACCESSKEYSECRET @""
+
+#define pageNum 10
+
+// 状态
+#define WAITPASS @"WAIT_PASS"
+#define ISPASS @"IS_PASS"
+#define UNPASS @"UN_PASS"
+
+
+// 通知
+#define WECHAT_NOTIFICATION @"WeChatNotification"   // 微信授权通知
+#define WECHATCENTER_NOTIFICATION @"WeChatCencelNotification"   // 微信授权通知
+
+#define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// 1125 x 2436   375 x 812
+#define kColorRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+#endif /* PrefixHeader_pch */
