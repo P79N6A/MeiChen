@@ -159,7 +159,7 @@
 - (void)requestFail:(NSError *)error addmore:(BOOL)addmore {
     dispatch_async(dispatch_get_main_queue(), ^{
         if (!addmore) {
-            [SVProgressHUD showErrorWithStatus:error.description];
+            [SVProgressHUD showErrorWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
         }
     });
 }

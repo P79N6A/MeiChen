@@ -20,6 +20,8 @@
 
 - (void)loadDataWithIndexPath:(NSIndexPath *)indexPath item:(PlanDetailItem *)item;
 
+- (void)loadDataWithIndexPath:(NSIndexPath *)indexPath model:(MyDZListModel *)model;
+
 - (void)iconImageView:(NSString *)url;
 - (void)label_1:(NSString *)str;
 - (void)label_2:(NSString *)str;

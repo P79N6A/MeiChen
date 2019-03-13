@@ -32,4 +32,7 @@
 // 计算字符串尺寸
 +(CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize string:(NSString *)string;
 
+// 判断卡号
++ (BOOL)checkBankCardNumber:(NSString *)cardNumber;
+
 @end

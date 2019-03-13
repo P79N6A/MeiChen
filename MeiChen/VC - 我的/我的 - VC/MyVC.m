@@ -19,6 +19,9 @@
 #import "MyDiaryVC.h"
 #import "SettingVC.h"
 #import "MyShareVC.h"
+#import "ServersVC.h"
+
+#import "PaySuccessVC.h"
 
 @interface MyVC () <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource> {
     CGRect originalFrame;
@@ -48,6 +51,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
     [self.headerview LoadUserData];
 }
     
@@ -136,7 +140,9 @@
 }
 #pragma mark - 我的服务
 - (void)MyServerMethod {
-    
+    ServersVC *vc = [[ServersVC alloc]init];
+    [vc setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark - 我的分享
 - (void)MyShareMethod {
@@ -249,7 +255,11 @@
                     break;
                 }
                 case 4: {
-                    
+                    PaySuccessVC *vc = [[PaySuccessVC alloc]init];
+                    vc.isOfflinePay = NO;
+                    vc.order_id = @"1";
+                    [vc setHidesBottomBarWhenPushed:YES];
+                    [self.navigationController pushViewController:vc animated:YES];
                     break;
                 }
                 case 5: {

@@ -23,7 +23,6 @@
         [self settingLab_5:@"0"];
         [self settingDetail_4:0];
         [self settingLab_6];
-        [self.pay setTitle:NSLocalizedString(@"MyPlanVC_25", nil) forState:(UIControlStateNormal)];
     }
     return self;
 }
@@ -65,16 +64,6 @@
     }
     [self settingDetail_4:model.coupon_deduct];
     [self settingLab_6];
-    [self settingPrice_1:model.total_price];
-    [self settingPrice_2:model.total_deduct];
-}
-
-- (void)settingPrice_1:(NSInteger)str {
-    self.price_1.text = [NSString stringWithFormat:@"￥%ld",str];
-}
-
-- (void)settingPrice_2:(NSInteger)str {
-    self.price_2.text = [NSString stringWithFormat:@"%@￥%ld",NSLocalizedString(@"MyPlanVC_24", nil),str];
 }
 
 - (void)settingLab_6 {
@@ -86,8 +75,8 @@
     self.detail_4.text = [NSString stringWithFormat:@"-￥%ld",str];
 }
 
-- (void)settingLab_5:(NSString *)str {
-    self.lab_5.text = [NSString stringWithFormat:@"%@%@%@",NSLocalizedString(@"MyPlanVC_20", nil),str,NSLocalizedString(@"MyPlanVC_21", nil)];
+- (void)settingLab_5:(NSInteger)str {
+    self.lab_5.text = [NSString stringWithFormat:@"%@%ld%@",NSLocalizedString(@"MyPlanVC_20", nil),str,NSLocalizedString(@"MyPlanVC_21", nil)];
 }
 
 // 可用积分抵扣

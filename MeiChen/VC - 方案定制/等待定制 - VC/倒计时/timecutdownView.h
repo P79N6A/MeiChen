@@ -10,6 +10,12 @@
 
 @interface timecutdownView : UIView
 
+- (void)SettingLabStr:(NSString *)str;
+
+- (void)SettingProgress:(CGFloat)pro;
+
+- (void)settingLineWidth:(CGFloat)linew;
+
 #pragma mark - 圆环进度(带渐变的)
 - (void)circleProgressView;
 

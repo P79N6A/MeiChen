@@ -498,22 +498,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VC - &#x6211;&#x7684;/&#x6211;&#x7684; - VC/MyVC.m"
-            timestampString = "573464911.7094361"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
-            landmarkName = "-ExclusiveSolutionMethod"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "VC - &#x65b9;&#x6848;&#x5b9a;&#x5236;/&#x4e0a;&#x4f20;&#x7167;&#x7247; - VC/&#x6574;&#x4f53;&#x548c;&#x5c40;&#x90e8;&#x89c6;&#x56fe;/AddImageView.m"
             timestampString = "572423567.2595921"
             startingColumnNumber = "9223372036854775807"
@@ -540,13 +524,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VC - &#x63a8;&#x8350;&#x9996;&#x9875;/&#x63a8;&#x8350;&#x9996;&#x9875; - VC/RecommendHomePageVC.m"
-            timestampString = "573470575.781119"
+            filePath = "VC - &#x65b9;&#x6848;&#x5b9a;&#x5236;/&#x65b9;&#x6848;&#x5b9a;&#x5236; - VC/&#x65b9;&#x6848;&#x5b9a;&#x5236;&#x9875;&#x6570;&#x636e;/PlanCustomizeVCData.m"
+            timestampString = "573723577.242467"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "-RecommendHomePageData_HotData_Success"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "-requestModelListData:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -556,13 +540,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VC - &#x63a8;&#x8350;&#x9996;&#x9875;/&#x63a8;&#x8350;&#x9996;&#x9875; - VC/RecommendHomePageVC.m"
-            timestampString = "573470575.781298"
+            filePath = "VC - &#x6211;&#x7684;/&#x6211;&#x7684;&#x5b9a;&#x5236;/&#x6211;&#x7684;&#x5b9a;&#x5236; - VC/&#x4f1a;&#x5458;view/CardView_1.m"
+            timestampString = "574160831.997286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "-reloadTabContentWithType:"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "-loadDataWith:coupon_deduct:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -572,14 +556,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x6570;&#x636e;&#x4e2d;&#x5fc3; - Data/&#x6570;&#x636e;&#x6a21;&#x578b;Model/RecommendModel.m"
-            timestampString = "573470575.781392"
+            filePath = "VC - &#x6211;&#x7684;/&#x4e13;&#x5c5e;&#x65b9;&#x6848;/&#x4e13;&#x5c5e;&#x65b9;&#x6848;&#x8be6;&#x7ec6;/&#x6211;&#x7684;&#x5b9a;&#x5236;&#x6570;&#x636e;/ExcSolDetailData.m"
+            timestampString = "574160831.99736"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "385"
-            endingLineNumber = "385"
-            landmarkName = "PlanDetailModel"
-            landmarkType = "3">
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "-ParsingPlanDetailData:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -588,12 +572,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VC - &#x6211;&#x7684;/&#x6211;&#x7684;&#x5b9a;&#x5236;/&#x6211;&#x7684;&#x5b9a;&#x5236; - VC/MyPlanVC.m"
-            timestampString = "573464911.711414"
+            filePath = "VC - &#x6211;&#x7684;/&#x4e13;&#x5c5e;&#x65b9;&#x6848;/&#x4e13;&#x5c5e;&#x65b9;&#x6848;&#x8be6;&#x7ec6;/&#x6211;&#x7684;&#x5b9a;&#x5236;&#x6570;&#x636e;/ExcSolDetailData.m"
+            timestampString = "574160831.997418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "243"
-            endingLineNumber = "243">
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "-ParsingPlanDetailData:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -602,46 +588,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x6570;&#x636e;&#x4e2d;&#x5fc3; - Data/&#x6570;&#x636e;&#x6a21;&#x578b;Model/RecommendModel.h"
-            timestampString = "573472257.582999"
+            filePath = "VC - &#x6211;&#x7684;/&#x4e13;&#x5c5e;&#x65b9;&#x6848;/&#x4e13;&#x5c5e;&#x65b9;&#x6848;&#x8be6;&#x7ec6;/&#x6211;&#x7684;&#x5b9a;&#x5236;&#x6570;&#x636e;/ExcSolDetailData.m"
+            timestampString = "574160831.997468"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "260"
-            endingLineNumber = "260"
-            landmarkName = "item"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[PlanDetailModel item]"
-                  moduleName = "meirong"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yangfeng/Desktop/github/MeiChen/MeiChen/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20-%20Data/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8BModel/RecommendModel.h"
-                  timestampString = "573472257.818751"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "260"
-                  endingLineNumber = "260"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[PlanDetailModel setItem:]"
-                  moduleName = "meirong"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yangfeng/Desktop/github/MeiChen/MeiChen/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20-%20Data/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8BModel/RecommendModel.h"
-                  timestampString = "573472257.820895"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "260"
-                  endingLineNumber = "260"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
+            startingLineNumber = "311"
+            endingLineNumber = "311"
+            landmarkName = "-settingModel:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -650,13 +604,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VC - &#x6211;&#x7684;/&#x6211;&#x7684;&#x5b9a;&#x5236;/&#x6211;&#x7684;&#x5b9a;&#x5236; - VC/MyPlanVC.m"
-            timestampString = "573472955.535267"
+            filePath = "VC - &#x6211;&#x7684;/&#x4e13;&#x5c5e;&#x65b9;&#x6848;/&#x652f;&#x4ed8;&#x6210;&#x529f;/PaySuccessVC.m"
+            timestampString = "574160831.99752"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "-ParsingPlanDetailData:"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "-ParsingListData:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VC - &#x6211;&#x7684;/&#x6211;&#x7684;&#x5206;&#x4eab;/&#x79ef;&#x5206;&#x5151;&#x6362;/ExchangeJiFenVC.m"
+            timestampString = "574160831.997573"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "-SubmitButtonMethod:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VC - &#x6211;&#x7684;/&#x6211;&#x7684;&#x5206;&#x4eab;/&#x6211;&#x7684;&#x5206;&#x4eab;/MyShareVC.m"
+            timestampString = "574160831.997632"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-loadContentView"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

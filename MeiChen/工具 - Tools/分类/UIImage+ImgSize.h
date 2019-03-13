@@ -15,6 +15,6 @@
 
 + (UIImage *)imageWithBgColor:(UIColor *)color;
 
-+ (UIImage *)imageWithlineColor:(UIColor *)color;
+//+ (UIImage *)imageWithlineColor:(UIColor *)color;
 
 @end

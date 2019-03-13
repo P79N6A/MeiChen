@@ -12,6 +12,9 @@
 #import "MyPlanView_3.h"
 #import "MyPlanView_4.h"
 #import "PerferView.h"
+#import "PaySuccessVC.h"
+#import "PricesView.h"
+#import "MyCardVC.h"
 
 @interface ExcSolDetailVC () <CustomNavViewDelegate, UIScrollViewDelegate, MyPlanDataDelegate, UITableViewDelegate, UITableViewDataSource> {
     CGFloat cell_h;
@@ -23,6 +26,7 @@
 @property (nonatomic, strong) UITableView *tabview;
 @property (nonatomic, strong) MyPlanView_3 *view_3;
 @property (nonatomic, strong) MyPlanView_4 *view_4;
+@property (nonatomic, strong) PricesView *view_5;
 
 @property (nonatomic, strong) ExcSolDetailData *data;
 @property (nonatomic, copy) NSArray *selectArr;
@@ -34,7 +38,6 @@
     [super viewDidLoad];
     self.data = [[ExcSolDetailData alloc]init];
     self.data.delegate = self;
-    [self.data requestMyPlanDetailWithOrder_id:self.order_id];
     [self CreateUI];
     
     // 添加了一个 键盘即将显示时的监听，如果接收到通知，将调用 keyboardWillApprear：
@@ -43,25 +46,52 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillDisAppear:) name:UIKeyboardWillHideNotification object:nil];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.data requestMyPlanDetailWithOrder_id:self.order_id];
+}
+
 #pragma mark - 协议
 - (void)MyPlanData_DownLoadDetailData_Success {
+    [SVProgressHUD dismiss];
     [self CreateViewUI];
 }
 - (void)MyPlanData_DownLoadDetailData_Fail:(NSError *)error {
     NSLog(@"下载失败");
+    [SVProgressHUD dismiss];
+    [self CustomNavView_LeftItem:nil];
 }
 // 支付成功
 - (void)MyPlanData_Pay_Success {
     NSLog(@"支付成功");
     [SVProgressHUD dismiss];
+    PaySuccessVC *vc = [[PaySuccessVC alloc]init];
+    vc.isOfflinePay = self.data.isPayOffLine;
+    vc.order_id = self.order_id;
+    [self.navigationController pushViewController:vc animated:YES];
+    self.data.isPayOffLine = NO;
 }
 // 支付失败
 - (void)MyPlanData_Pay_Fail:(NSError *)error {
     NSLog(@"支付失败");
-    [SVProgressHUD dismiss];
+    [SVProgressHUD showErrorWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
+    self.data.isPayOffLine = NO;
 }
-
-
+// 线下支付
+- (void)MyPlanData_PayOffline {
+    [self ButtonMethod:nil];
+}
+// 购买一卡通
+- (void)MyPlanData_BuyCard {
+    MyCardVC *vc = [[MyCardVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+// 支付成功 更新定制详情
+- (void)MyPlanData_UpdateData {
+    NSLog(@"支付成功 更新定制详情");
+    [SVProgressHUD show];
+    [self.data requestMyPlanDetailWithOrder_id:self.order_id];
+}
 
 
 #pragma mark - 创建UI
@@ -74,15 +104,38 @@
     self.navview.titleLab.text = self.titleStr;
     self.navview.line.hidden = NO;
     [self.view addSubview:self.navview];
+    
 }
 
 - (void)CreateViewUI {
-    CGFloat width = CGRectGetWidth(self.view.frame);
+    NSMutableArray *se = [NSMutableArray array];
+    for (int i = 0; i < self.data.model.coupons.count; i ++) {
+        PlanDetailCoupons *coupons = self.data.model.coupons[i];
+        if (coupons.is_gray == 0) {
+            [se addObject:coupons];
+        }
+    }
+    self.selectArr = [NSArray arrayWithArray:se];
     self.selectArr = [NSArray arrayWithArray:self.data.model.coupons];
     jifen = self.data.model.points_deduct;
     
-    _scroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.navview.frame), width, CGRectGetHeight(self.view.frame) - CGRectGetHeight(self.navview.frame))];
-    _scroll.backgroundColor = [UIColor whiteColor];//kColorRGB(0xf0f0f0);
+    if (_scroll != nil) {
+        if (self.data.model.has_card == 1) {
+            [self.view_3 loadDataWith:self.data.model];
+        }
+        else {
+            [self.view_4 loadDataWith:self.data.model];
+        }
+        [self.view_5 loadDataWith:self.data.model];
+        [self.tabview reloadData];
+        NSLog(@"return 只加载数据 -- 显示");
+        return;
+    }
+
+    CGFloat width = CGRectGetWidth(self.view.frame);
+    CGFloat pay_h = 45;
+    _scroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.navview.frame), width, CGRectGetHeight(self.view.frame) - CGRectGetHeight(self.navview.frame)-pay_h)];
+    _scroll.backgroundColor = [UIColor whiteColor];
     _scroll.delegate = self;
     _scroll.showsHorizontalScrollIndicator = NO;
     _scroll.showsVerticalScrollIndicator = NO;
@@ -111,31 +164,37 @@
     lineV.backgroundColor = kColorRGB(0xf0f0f0);
     [_scroll addSubview:lineV];
     
+    CGFloat y = CGRectGetMaxY(lineV.frame);
     if (self.data.model.has_card == 1) {
-        self.view_3 = [[MyPlanView_3 alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(lineV.frame), width, 370)];
+        self.view_3 = [[MyPlanView_3 alloc]initWithFrame:CGRectMake(0, y, width, 325)];
         [self.view_3 loadDataWith:self.data.model];
         [self.view_3.select_2 addTarget:self action:@selector(SelectJiFenButtonMethod:) forControlEvents:(UIControlEventTouchUpInside)];
         [self.view_3.select_3 addTarget:self action:@selector(DidTouchYouHuiJuan:) forControlEvents:(UIControlEventTouchUpInside)];
-        [self.view_3.pay addTarget:self action:@selector(ButtonMethod:) forControlEvents:(UIControlEventTouchUpInside)];
-        [_scroll addSubview:self.view_3];
         
+        [_scroll addSubview:self.view_3];
         _scroll.contentSize = CGSizeMake(width, CGRectGetMaxY(self.view_3.frame));
     }
     else {
-        CGFloat y = CGRectGetMaxY(lineV.frame);
-        CGFloat he = _scroll.frame.size.height - y;
-        if (he < 166) {
-            he = 166;
-        }
-        self.view_4 = [[MyPlanView_4 alloc]initWithFrame:CGRectMake(0, y, width, he)];
+        CGFloat h_4 = 121;
+        self.view_4 = [[MyPlanView_4 alloc]initWithFrame:CGRectMake(0, y, width, h_4)];
         [self.view_4 loadDataWith:self.data.model];
         [self.view_4.select_1 addTarget:self action:@selector(DidTouchYouHuiJuan:) forControlEvents:(UIControlEventTouchUpInside)];
-        [self.view_4.pay addTarget:self action:@selector(ButtonMethod:) forControlEvents:(UIControlEventTouchUpInside)];
+        
         [_scroll addSubview:self.view_4];
         _scroll.contentSize = CGSizeMake(width, CGRectGetMaxY(self.view_4.frame));
     }
     
+    CGFloat hh = _scroll.frame.size.height - _scroll.contentSize.height;
+    if (hh > 0) {
+        UIView *wh_v = [[UIView alloc]initWithFrame:CGRectMake(0, _scroll.frame.size.height-hh, width, hh)];
+        wh_v.backgroundColor = kColorRGB(0xF0F0F0);
+        [_scroll addSubview:wh_v];
+    }
     
+    self.view_5 = [[PricesView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_scroll.frame), width, pay_h)];
+    [self.view_5.pay addTarget:self action:@selector(ButtonMethod:) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view_5 loadDataWith:self.data.model];
+    [self.view addSubview:self.view_5];
 }
 
 #pragma mark - 抵扣积分
@@ -174,7 +233,7 @@
     NSInteger coupon_deduct = 0;
     for (int i = 0; i < array.count; i ++) {
         PlanDetailCoupons *model = array[i];
-        if ([model.is_gray integerValue] == 0) {
+        if (model.is_gray == 0) {
             coupon_deduct += [model.coupon.value integerValue];
         }
     }
@@ -191,6 +250,7 @@
     else {
         [self.view_4 loadDataWith:self.data.model];
     }
+    [self.view_5 loadDataWith:self.data.model];
 }
 
 #pragma mark - UITableViewDelegate
@@ -223,6 +283,12 @@
 #pragma mark - 立即支付
 - (void)ButtonMethod:(UIButton *)sender {
     NSLog(@"立即支付");
+    if (self.data.model.is_card_member != 1) {
+        if (!self.data.isPayOffLine) {
+            [self.data.notView show];
+            return;
+        }
+    }
     BOOL point_deduct;
     BOOL coupon_deduct;
     NSString *text;

@@ -7,11 +7,14 @@
 //
 
 #import "MyCardVC.h"
+#import "MemberCollView.h"
+#import "MyCardTabView.h"
 
 @interface MyCardVC () <CustomNavViewDelegate>
 
 @property (nonatomic, strong) CustomNavView *navview;
-
+@property (nonatomic, strong) MemberCollView *collView;
+@property (nonatomic, strong) MyCardTabView *tabbarView;
 @end
 
 @implementation MyCardVC
@@ -22,9 +25,23 @@
     [self BUildUI];
 }
 
--(void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+    [[UserData shareInstance] requestUserData:^(NSError *error) {
+        if (error == nil) {
+            
+        }
+        else {
+            [self CustomNavView_LeftItem:nil];
+        }
+    }];
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    [_collView.collection reloadData];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -35,7 +52,8 @@
 #pragma mark - UI
 - (void)BUildUI {
     self.view.backgroundColor = [UIColor blackColor];
-    CGRect statusRect = [[UIApplication sharedApplication] statusBarFrame];
+    CGFloat screen_w = self.view.frame.size.width;
+    CGFloat screen_h = self.view.frame.size.height;
     
     self.navview = [[CustomNavView alloc]init];
     [self.navview LeftItemIsWhiteBack];
@@ -46,7 +64,15 @@
     self.navview.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.navview];
     
-//    CGFloat y = statusRect.size.height + 44;
+    CGFloat y = CGRectGetMaxY(self.navview.frame)+10;
+    _collView = [[MemberCollView alloc]initWithFrame:CGRectMake(0, y, screen_w, (202.0/375*screen_w)+10)];
+    _collView.pagingEnabled = YES;
+    _collView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:_collView];
+    
+    CGFloat y_2 = CGRectGetMaxY(_collView.frame)-20;
+    self.tabbarView = [[MyCardTabView alloc]initWithFrame:CGRectMake(0, y_2, screen_w, 65.0/667.0*screen_h)];
+    [self.view addSubview:self.tabbarView];
     
 }
 

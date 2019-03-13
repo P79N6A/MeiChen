@@ -91,7 +91,31 @@
 		041ECC5D21F0540F000F3ABC /* PlanCustomizeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041ECC5B21F0540F000F3ABC /* PlanCustomizeCell.xib */; };
 		041ECC6121F0608C000F3ABC /* ImageCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 041ECC6021F0608C000F3ABC /* ImageCVC.m */; };
 		0427D951222E77BA00229E5F /* MyPlanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D950222E77BA00229E5F /* MyPlanVC.m */; };
-		0427D955222E7BC400229E5F /* MyDZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D954222E7BC400229E5F /* MyDZModel.m */; };
+		0427D959222F5C2400229E5F /* MyDZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D958222F5C2400229E5F /* MyDZModel.m */; };
+		0427D95D222F6F2100229E5F /* CardView_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D95C222F6F2100229E5F /* CardView_1.m */; };
+		0427D960222F6F2C00229E5F /* CardView_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D95F222F6F2C00229E5F /* CardView_2.m */; };
+		0427D962222F6F3400229E5F /* CardView_1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0427D961222F6F3400229E5F /* CardView_1.xib */; };
+		0427D964222F6F3D00229E5F /* CardView_2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0427D963222F6F3D00229E5F /* CardView_2.xib */; };
+		0427D968222F783500229E5F /* NewPerferCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D966222F783500229E5F /* NewPerferCell.m */; };
+		0427D969222F783500229E5F /* NewPerferCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0427D967222F783500229E5F /* NewPerferCell.xib */; };
+		0427D96D222FB39800229E5F /* PaySuccessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D96C222FB39800229E5F /* PaySuccessVC.m */; };
+		0427D970222FB44400229E5F /* PaySuccessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D96F222FB44400229E5F /* PaySuccessView.m */; };
+		0427D972222FB44D00229E5F /* PaySuccessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0427D971222FB44D00229E5F /* PaySuccessView.xib */; };
+		0427D976222FCBF400229E5F /* ServersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D975222FCBF400229E5F /* ServersVC.m */; };
+		0427D979222FCC0B00229E5F /* ServersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D978222FCC0B00229E5F /* ServersView.m */; };
+		0427D97B222FCC1300229E5F /* ServersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0427D97A222FCC1300229E5F /* ServersView.xib */; };
+		0427D9852230F59300229E5F /* ServersItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D9832230F59300229E5F /* ServersItem.m */; };
+		0427D9862230F59300229E5F /* ServersItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0427D9842230F59300229E5F /* ServersItem.xib */; };
+		0427D9892230FEF200229E5F /* MessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D9882230FEF200229E5F /* MessageView.m */; };
+		0427D98B2230FEFA00229E5F /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0427D98A2230FEFA00229E5F /* MessageView.xib */; };
+		0427D98F2231034000229E5F /* ServerPlanListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D98E2231034000229E5F /* ServerPlanListView.m */; };
+		0427D9952231075000229E5F /* ServerPlanListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D9932231075000229E5F /* ServerPlanListCell.m */; };
+		0427D9962231075000229E5F /* ServerPlanListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0427D9942231075000229E5F /* ServerPlanListCell.xib */; };
+		0427D99A223115AC00229E5F /* ServerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D999223115AC00229E5F /* ServerModel.m */; };
+		0427D99E223237B800229E5F /* RechargeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D99D223237B800229E5F /* RechargeView.m */; };
+		0427D9A0223237C100229E5F /* RechargeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0427D99F223237C100229E5F /* RechargeView.xib */; };
+		0427D9A52232541600229E5F /* PayMethodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427D9A42232541600229E5F /* PayMethodView.m */; };
+		0427D9A72232542800229E5F /* PayMethodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0427D9A62232542800229E5F /* PayMethodView.xib */; };
 		0430E9C021D20918006F5A5D /* GradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0430E9BE21D20918006F5A5D /* GradientLabel.m */; };
 		0430E9D521D35BA3006F5A5D /* UIImage+ImgSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0430E9D421D35BA3006F5A5D /* UIImage+ImgSize.m */; };
 		0430E9D721D3653B006F5A5D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0430E9D621D3653B006F5A5D /* ImageIO.framework */; };
@@ -108,6 +132,21 @@
 		0455C49621C349F20070EE6E /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0455C49521C349F20070EE6E /* WaterFlowLayout.m */; };
 		0455C49B21C34A5E0070EE6E /* WaterFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0455C49921C34A5E0070EE6E /* WaterFlowCell.m */; };
 		0455C49C21C34A5E0070EE6E /* WaterFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0455C49A21C34A5E0070EE6E /* WaterFlowCell.xib */; };
+		045BCD2D22362D290002AB6D /* MemberCollItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BCD2B22362D290002AB6D /* MemberCollItem.m */; };
+		045BCD2E22362D290002AB6D /* MemberCollItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045BCD2C22362D290002AB6D /* MemberCollItem.xib */; };
+		045BCD31223638030002AB6D /* MemberCollLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BCD30223638030002AB6D /* MemberCollLayout.m */; };
+		045BCD382236498D0002AB6D /* MemberCollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BCD372236498D0002AB6D /* MemberCollView.m */; };
+		045BCD3D2237535E0002AB6D /* Card_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BCD3C2237535E0002AB6D /* Card_1.m */; };
+		045BCD40223753780002AB6D /* Card_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BCD3F223753780002AB6D /* Card_2.m */; };
+		045BCD42223753870002AB6D /* Card_1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045BCD41223753870002AB6D /* Card_1.xib */; };
+		045BCD44223753940002AB6D /* Card_2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045BCD43223753940002AB6D /* Card_2.xib */; };
+		045BCD482237868F0002AB6D /* MyCardTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BCD472237868F0002AB6D /* MyCardTabView.m */; };
+		045BCD4A223786990002AB6D /* MyCardTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045BCD49223786990002AB6D /* MyCardTabView.xib */; };
+		045BCD4E22378D700002AB6D /* MyShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BCD4D22378D700002AB6D /* MyShareModel.m */; };
+		045BCD562238972A0002AB6D /* ExchangeJiFenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BCD552238972A0002AB6D /* ExchangeJiFenView.m */; };
+		045BCD58223897390002AB6D /* ExchangeJiFenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045BCD57223897390002AB6D /* ExchangeJiFenView.xib */; };
+		045BCD5C2238E8BF0002AB6D /* YuYueSurgeryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BCD5B2238E8BF0002AB6D /* YuYueSurgeryView.m */; };
+		045BCD5E2238E8D50002AB6D /* YuYueSurgeryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045BCD5D2238E8D50002AB6D /* YuYueSurgeryView.xib */; };
 		0465A51921BF689B00AC054B /* UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465A51821BF689B00AC054B /* UserDefaults.m */; };
 		0465A51C21BF93F100AC054B /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465A51B21BF93F100AC054B /* UserService.m */; };
 		0465A52021BF962800AC054B /* WeChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465A51F21BF962800AC054B /* WeChat.m */; };
@@ -185,6 +224,15 @@
 		0474C59621E731A600189EF0 /* CaseVCData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474C59521E731A600189EF0 /* CaseVCData.m */; };
 		0474C5A121E838F000189EF0 /* ZanData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474C5A021E838F000189EF0 /* ZanData.m */; };
 		04830ABE21EC26B100F29B16 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 04830ABD21EC26B100F29B16 /* UserData.m */; };
+		0484E0362233600600EB0DDB /* PricesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484E0352233600600EB0DDB /* PricesView.m */; };
+		0484E0382233601B00EB0DDB /* PricesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484E0372233601B00EB0DDB /* PricesView.xib */; };
+		0484E03C2233694B00EB0DDB /* NotMemberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484E03B2233694B00EB0DDB /* NotMemberView.m */; };
+		0484E03E2233695300EB0DDB /* NotMemberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484E03D2233695300EB0DDB /* NotMemberView.xib */; };
+		0484E0422233B49800EB0DDB /* YuYueSurgery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484E0412233B49800EB0DDB /* YuYueSurgery.m */; };
+		0484E0462233B97B00EB0DDB /* MemberView_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484E0452233B97B00EB0DDB /* MemberView_1.m */; };
+		0484E0482233B98400EB0DDB /* MemberView_1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484E0472233B98400EB0DDB /* MemberView_1.xib */; };
+		0484E04D2235F33300EB0DDB /* PaySuccessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484E04B2235F33300EB0DDB /* PaySuccessCell.m */; };
+		0484E04E2235F33300EB0DDB /* PaySuccessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484E04C2235F33300EB0DDB /* PaySuccessCell.xib */; };
 		048E0B3B2201400E000578C2 /* MyCell_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E0B392201400E000578C2 /* MyCell_1.m */; };
 		048E0B3C2201400E000578C2 /* MyCell_1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048E0B3A2201400E000578C2 /* MyCell_1.xib */; };
 		048E0B4022014024000578C2 /* MyCell_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E0B3E22014024000578C2 /* MyCell_2.m */; };
@@ -363,8 +411,46 @@
 		041ECC6021F0608C000F3ABC /* ImageCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCVC.m; sourceTree = "<group>"; };
 		0427D94F222E77BA00229E5F /* MyPlanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPlanVC.h; sourceTree = "<group>"; };
 		0427D950222E77BA00229E5F /* MyPlanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPlanVC.m; sourceTree = "<group>"; };
-		0427D953222E7BC400229E5F /* MyDZModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDZModel.h; sourceTree = "<group>"; };
-		0427D954222E7BC400229E5F /* MyDZModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDZModel.m; sourceTree = "<group>"; };
+		0427D957222F5C2400229E5F /* MyDZModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDZModel.h; sourceTree = "<group>"; };
+		0427D958222F5C2400229E5F /* MyDZModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDZModel.m; sourceTree = "<group>"; };
+		0427D95B222F6F2100229E5F /* CardView_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardView_1.h; sourceTree = "<group>"; };
+		0427D95C222F6F2100229E5F /* CardView_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardView_1.m; sourceTree = "<group>"; };
+		0427D95E222F6F2C00229E5F /* CardView_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardView_2.h; sourceTree = "<group>"; };
+		0427D95F222F6F2C00229E5F /* CardView_2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardView_2.m; sourceTree = "<group>"; };
+		0427D961222F6F3400229E5F /* CardView_1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView_1.xib; sourceTree = "<group>"; };
+		0427D963222F6F3D00229E5F /* CardView_2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView_2.xib; sourceTree = "<group>"; };
+		0427D965222F783500229E5F /* NewPerferCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewPerferCell.h; sourceTree = "<group>"; };
+		0427D966222F783500229E5F /* NewPerferCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewPerferCell.m; sourceTree = "<group>"; };
+		0427D967222F783500229E5F /* NewPerferCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPerferCell.xib; sourceTree = "<group>"; };
+		0427D96B222FB39800229E5F /* PaySuccessVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaySuccessVC.h; sourceTree = "<group>"; };
+		0427D96C222FB39800229E5F /* PaySuccessVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaySuccessVC.m; sourceTree = "<group>"; };
+		0427D96E222FB44400229E5F /* PaySuccessView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaySuccessView.h; sourceTree = "<group>"; };
+		0427D96F222FB44400229E5F /* PaySuccessView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaySuccessView.m; sourceTree = "<group>"; };
+		0427D971222FB44D00229E5F /* PaySuccessView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaySuccessView.xib; sourceTree = "<group>"; };
+		0427D974222FCBF400229E5F /* ServersVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServersVC.h; sourceTree = "<group>"; };
+		0427D975222FCBF400229E5F /* ServersVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServersVC.m; sourceTree = "<group>"; };
+		0427D977222FCC0B00229E5F /* ServersView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServersView.h; sourceTree = "<group>"; };
+		0427D978222FCC0B00229E5F /* ServersView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServersView.m; sourceTree = "<group>"; };
+		0427D97A222FCC1300229E5F /* ServersView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServersView.xib; sourceTree = "<group>"; };
+		0427D9822230F59300229E5F /* ServersItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServersItem.h; sourceTree = "<group>"; };
+		0427D9832230F59300229E5F /* ServersItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServersItem.m; sourceTree = "<group>"; };
+		0427D9842230F59300229E5F /* ServersItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServersItem.xib; sourceTree = "<group>"; };
+		0427D9872230FEF200229E5F /* MessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageView.h; sourceTree = "<group>"; };
+		0427D9882230FEF200229E5F /* MessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageView.m; sourceTree = "<group>"; };
+		0427D98A2230FEFA00229E5F /* MessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
+		0427D98D2231034000229E5F /* ServerPlanListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerPlanListView.h; sourceTree = "<group>"; };
+		0427D98E2231034000229E5F /* ServerPlanListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerPlanListView.m; sourceTree = "<group>"; };
+		0427D9922231075000229E5F /* ServerPlanListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerPlanListCell.h; sourceTree = "<group>"; };
+		0427D9932231075000229E5F /* ServerPlanListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerPlanListCell.m; sourceTree = "<group>"; };
+		0427D9942231075000229E5F /* ServerPlanListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerPlanListCell.xib; sourceTree = "<group>"; };
+		0427D998223115AC00229E5F /* ServerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerModel.h; sourceTree = "<group>"; };
+		0427D999223115AC00229E5F /* ServerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerModel.m; sourceTree = "<group>"; };
+		0427D99C223237B800229E5F /* RechargeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RechargeView.h; sourceTree = "<group>"; };
+		0427D99D223237B800229E5F /* RechargeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RechargeView.m; sourceTree = "<group>"; };
+		0427D99F223237C100229E5F /* RechargeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RechargeView.xib; sourceTree = "<group>"; };
+		0427D9A32232541600229E5F /* PayMethodView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayMethodView.h; sourceTree = "<group>"; };
+		0427D9A42232541600229E5F /* PayMethodView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayMethodView.m; sourceTree = "<group>"; };
+		0427D9A62232542800229E5F /* PayMethodView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayMethodView.xib; sourceTree = "<group>"; };
 		0430E9BE21D20918006F5A5D /* GradientLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientLabel.m; sourceTree = "<group>"; };
 		0430E9BF21D20918006F5A5D /* GradientLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientLabel.h; sourceTree = "<group>"; };
 		0430E9D321D35BA3006F5A5D /* UIImage+ImgSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImgSize.h"; sourceTree = "<group>"; };
@@ -393,6 +479,30 @@
 		0455C49821C34A5E0070EE6E /* WaterFlowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFlowCell.h; sourceTree = "<group>"; };
 		0455C49921C34A5E0070EE6E /* WaterFlowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFlowCell.m; sourceTree = "<group>"; };
 		0455C49A21C34A5E0070EE6E /* WaterFlowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaterFlowCell.xib; sourceTree = "<group>"; };
+		045BCD2A22362D290002AB6D /* MemberCollItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberCollItem.h; sourceTree = "<group>"; };
+		045BCD2B22362D290002AB6D /* MemberCollItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberCollItem.m; sourceTree = "<group>"; };
+		045BCD2C22362D290002AB6D /* MemberCollItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberCollItem.xib; sourceTree = "<group>"; };
+		045BCD2F223638030002AB6D /* MemberCollLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberCollLayout.h; sourceTree = "<group>"; };
+		045BCD30223638030002AB6D /* MemberCollLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberCollLayout.m; sourceTree = "<group>"; };
+		045BCD362236498D0002AB6D /* MemberCollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberCollView.h; sourceTree = "<group>"; };
+		045BCD372236498D0002AB6D /* MemberCollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberCollView.m; sourceTree = "<group>"; };
+		045BCD3B2237535E0002AB6D /* Card_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card_1.h; sourceTree = "<group>"; };
+		045BCD3C2237535E0002AB6D /* Card_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Card_1.m; sourceTree = "<group>"; };
+		045BCD3E223753780002AB6D /* Card_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card_2.h; sourceTree = "<group>"; };
+		045BCD3F223753780002AB6D /* Card_2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Card_2.m; sourceTree = "<group>"; };
+		045BCD41223753870002AB6D /* Card_1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Card_1.xib; sourceTree = "<group>"; };
+		045BCD43223753940002AB6D /* Card_2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Card_2.xib; sourceTree = "<group>"; };
+		045BCD462237868F0002AB6D /* MyCardTabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCardTabView.h; sourceTree = "<group>"; };
+		045BCD472237868F0002AB6D /* MyCardTabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCardTabView.m; sourceTree = "<group>"; };
+		045BCD49223786990002AB6D /* MyCardTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCardTabView.xib; sourceTree = "<group>"; };
+		045BCD4C22378D700002AB6D /* MyShareModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyShareModel.h; sourceTree = "<group>"; };
+		045BCD4D22378D700002AB6D /* MyShareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyShareModel.m; sourceTree = "<group>"; };
+		045BCD542238972A0002AB6D /* ExchangeJiFenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExchangeJiFenView.h; sourceTree = "<group>"; };
+		045BCD552238972A0002AB6D /* ExchangeJiFenView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExchangeJiFenView.m; sourceTree = "<group>"; };
+		045BCD57223897390002AB6D /* ExchangeJiFenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeJiFenView.xib; sourceTree = "<group>"; };
+		045BCD5A2238E8BF0002AB6D /* YuYueSurgeryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YuYueSurgeryView.h; sourceTree = "<group>"; };
+		045BCD5B2238E8BF0002AB6D /* YuYueSurgeryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuYueSurgeryView.m; sourceTree = "<group>"; };
+		045BCD5D2238E8D50002AB6D /* YuYueSurgeryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YuYueSurgeryView.xib; sourceTree = "<group>"; };
 		0465A51721BF689B00AC054B /* UserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaults.h; sourceTree = "<group>"; };
 		0465A51821BF689B00AC054B /* UserDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaults.m; sourceTree = "<group>"; };
 		0465A51A21BF93F100AC054B /* UserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
@@ -524,6 +634,20 @@
 		0474C5A021E838F000189EF0 /* ZanData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZanData.m; sourceTree = "<group>"; };
 		04830ABC21EC26B100F29B16 /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
 		04830ABD21EC26B100F29B16 /* UserData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+		0484E0342233600600EB0DDB /* PricesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PricesView.h; sourceTree = "<group>"; };
+		0484E0352233600600EB0DDB /* PricesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PricesView.m; sourceTree = "<group>"; };
+		0484E0372233601B00EB0DDB /* PricesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PricesView.xib; sourceTree = "<group>"; };
+		0484E03A2233694B00EB0DDB /* NotMemberView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotMemberView.h; sourceTree = "<group>"; };
+		0484E03B2233694B00EB0DDB /* NotMemberView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotMemberView.m; sourceTree = "<group>"; };
+		0484E03D2233695300EB0DDB /* NotMemberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotMemberView.xib; sourceTree = "<group>"; };
+		0484E0402233B49800EB0DDB /* YuYueSurgery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YuYueSurgery.h; sourceTree = "<group>"; };
+		0484E0412233B49800EB0DDB /* YuYueSurgery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuYueSurgery.m; sourceTree = "<group>"; };
+		0484E0442233B97B00EB0DDB /* MemberView_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberView_1.h; sourceTree = "<group>"; };
+		0484E0452233B97B00EB0DDB /* MemberView_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberView_1.m; sourceTree = "<group>"; };
+		0484E0472233B98400EB0DDB /* MemberView_1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberView_1.xib; sourceTree = "<group>"; };
+		0484E04A2235F33300EB0DDB /* PaySuccessCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaySuccessCell.h; sourceTree = "<group>"; };
+		0484E04B2235F33300EB0DDB /* PaySuccessCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaySuccessCell.m; sourceTree = "<group>"; };
+		0484E04C2235F33300EB0DDB /* PaySuccessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaySuccessCell.xib; sourceTree = "<group>"; };
 		048AFD9621DCB001009F2DDE /* HistoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryHeader.h; sourceTree = "<group>"; };
 		048E0B382201400E000578C2 /* MyCell_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCell_1.h; sourceTree = "<group>"; };
 		048E0B392201400E000578C2 /* MyCell_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCell_1.m; sourceTree = "<group>"; };
@@ -645,6 +769,7 @@
 				0474C54121E4342F00189EF0 /* VC - 推荐首页 */,
 				0474C54321E4369B00189EF0 /* VC - 方案定制 */,
 				0474C54421E436A600189EF0 /* VC - 我的 */,
+				0427D9A12232534500229E5F /* 充值支付View */,
 				0474C54521E436DD00189EF0 /* VC - 登录注册 */,
 				0474C55821E44A4400189EF0 /* 数据中心 - Data */,
 				0474C56021E4932F00189EF0 /* 工具 - Tools */,
@@ -818,9 +943,7 @@
 		0419057522290685007FE370 /* 我的分享 */ = {
 			isa = PBXGroup;
 			children = (
-				04190576222906B7007FE370 /* MyShareVC.h */,
-				04190577222906B7007FE370 /* MyShareVC.m */,
-				0419057922290840007FE370 /* view */,
+				045BCD4F2237A0710002AB6D /* 我的分享 */,
 				0419059122292617007FE370 /* 引荐管理 */,
 				04190595222928B0007FE370 /* 积分兑换 */,
 				0419059922292A2D007FE370 /* 兑换记录 */,
@@ -860,6 +983,7 @@
 			children = (
 				0419059622292909007FE370 /* ExchangeJiFenVC.h */,
 				0419059722292909007FE370 /* ExchangeJiFenVC.m */,
+				045BCD50223896D80002AB6D /* view */,
 			);
 			path = "积分兑换";
 			sourceTree = "<group>";
@@ -914,6 +1038,9 @@
 				041905C8222CF91A007FE370 /* MyPlanView_4.h */,
 				041905C9222CF91A007FE370 /* MyPlanView_4.m */,
 				041905CB222CF929007FE370 /* MyPlanView_4.xib */,
+				0484E0342233600600EB0DDB /* PricesView.h */,
+				0484E0352233600600EB0DDB /* PricesView.m */,
+				0484E0372233601B00EB0DDB /* PricesView.xib */,
 			);
 			path = "会员";
 			sourceTree = "<group>";
@@ -1029,13 +1156,136 @@
 			path = PageController;
 			sourceTree = "<group>";
 		};
-		0427D952222E7B7D00229E5F /* 我的定制模型 */ = {
+		0427D956222F5C0A00229E5F /* 我的定制模型 */ = {
 			isa = PBXGroup;
 			children = (
-				0427D953222E7BC400229E5F /* MyDZModel.h */,
-				0427D954222E7BC400229E5F /* MyDZModel.m */,
+				0427D957222F5C2400229E5F /* MyDZModel.h */,
+				0427D958222F5C2400229E5F /* MyDZModel.m */,
 			);
 			path = "我的定制模型";
+			sourceTree = "<group>";
+		};
+		0427D95A222F6EBE00229E5F /* 会员view */ = {
+			isa = PBXGroup;
+			children = (
+				0427D95B222F6F2100229E5F /* CardView_1.h */,
+				0427D95C222F6F2100229E5F /* CardView_1.m */,
+				0427D961222F6F3400229E5F /* CardView_1.xib */,
+				0427D95E222F6F2C00229E5F /* CardView_2.h */,
+				0427D95F222F6F2C00229E5F /* CardView_2.m */,
+				0427D963222F6F3D00229E5F /* CardView_2.xib */,
+				0427D965222F783500229E5F /* NewPerferCell.h */,
+				0427D966222F783500229E5F /* NewPerferCell.m */,
+				0427D967222F783500229E5F /* NewPerferCell.xib */,
+			);
+			path = "会员view";
+			sourceTree = "<group>";
+		};
+		0427D96A222FB37400229E5F /* 支付成功 */ = {
+			isa = PBXGroup;
+			children = (
+				0427D96B222FB39800229E5F /* PaySuccessVC.h */,
+				0427D96C222FB39800229E5F /* PaySuccessVC.m */,
+				0427D973222FB59700229E5F /* 支付成功view */,
+				0484E0492235F30900EB0DDB /* Cell */,
+			);
+			path = "支付成功";
+			sourceTree = "<group>";
+		};
+		0427D973222FB59700229E5F /* 支付成功view */ = {
+			isa = PBXGroup;
+			children = (
+				0427D96E222FB44400229E5F /* PaySuccessView.h */,
+				0427D96F222FB44400229E5F /* PaySuccessView.m */,
+				0427D971222FB44D00229E5F /* PaySuccessView.xib */,
+			);
+			path = "支付成功view";
+			sourceTree = "<group>";
+		};
+		0427D97F2230B55300229E5F /* 我的服务 */ = {
+			isa = PBXGroup;
+			children = (
+				0427D974222FCBF400229E5F /* ServersVC.h */,
+				0427D975222FCBF400229E5F /* ServersVC.m */,
+				0427D9802230B56A00229E5F /* view */,
+				0427D9812230B57B00229E5F /* 消息view */,
+				0427D98C223102CF00229E5F /* 专属方案列表 */,
+			);
+			path = "我的服务";
+			sourceTree = "<group>";
+		};
+		0427D9802230B56A00229E5F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0427D977222FCC0B00229E5F /* ServersView.h */,
+				0427D978222FCC0B00229E5F /* ServersView.m */,
+				0427D97A222FCC1300229E5F /* ServersView.xib */,
+				0427D9822230F59300229E5F /* ServersItem.h */,
+				0427D9832230F59300229E5F /* ServersItem.m */,
+				0427D9842230F59300229E5F /* ServersItem.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		0427D9812230B57B00229E5F /* 消息view */ = {
+			isa = PBXGroup;
+			children = (
+				0427D9872230FEF200229E5F /* MessageView.h */,
+				0427D9882230FEF200229E5F /* MessageView.m */,
+				0427D98A2230FEFA00229E5F /* MessageView.xib */,
+			);
+			path = "消息view";
+			sourceTree = "<group>";
+		};
+		0427D98C223102CF00229E5F /* 专属方案列表 */ = {
+			isa = PBXGroup;
+			children = (
+				0427D98D2231034000229E5F /* ServerPlanListView.h */,
+				0427D98E2231034000229E5F /* ServerPlanListView.m */,
+				0427D9922231075000229E5F /* ServerPlanListCell.h */,
+				0427D9932231075000229E5F /* ServerPlanListCell.m */,
+				0427D9942231075000229E5F /* ServerPlanListCell.xib */,
+			);
+			path = "专属方案列表";
+			sourceTree = "<group>";
+		};
+		0427D9972231156C00229E5F /* 我的服务模型 */ = {
+			isa = PBXGroup;
+			children = (
+				0427D998223115AC00229E5F /* ServerModel.h */,
+				0427D999223115AC00229E5F /* ServerModel.m */,
+			);
+			path = "我的服务模型";
+			sourceTree = "<group>";
+		};
+		0427D99B2232375900229E5F /* 会员充值 */ = {
+			isa = PBXGroup;
+			children = (
+				0427D99C223237B800229E5F /* RechargeView.h */,
+				0427D99D223237B800229E5F /* RechargeView.m */,
+				0427D99F223237C100229E5F /* RechargeView.xib */,
+			);
+			path = "会员充值";
+			sourceTree = "<group>";
+		};
+		0427D9A12232534500229E5F /* 充值支付View */ = {
+			isa = PBXGroup;
+			children = (
+				0484E0392233690D00EB0DDB /* 不是会员 */,
+				0427D99B2232375900229E5F /* 会员充值 */,
+				0427D9A2223253AE00229E5F /* 选择支付方式 */,
+			);
+			path = "充值支付View";
+			sourceTree = "<group>";
+		};
+		0427D9A2223253AE00229E5F /* 选择支付方式 */ = {
+			isa = PBXGroup;
+			children = (
+				0427D9A32232541600229E5F /* PayMethodView.h */,
+				0427D9A42232541600229E5F /* PayMethodView.m */,
+				0427D9A62232542800229E5F /* PayMethodView.xib */,
+			);
+			path = "选择支付方式";
 			sourceTree = "<group>";
 		};
 		0430E9BD21D20908006F5A5D /* 继承 */ = {
@@ -1108,6 +1358,89 @@
 			path = CollerctionItem;
 			sourceTree = "<group>";
 		};
+		045BCD2922362CE20002AB6D /* item */ = {
+			isa = PBXGroup;
+			children = (
+				045BCD392237533B0002AB6D /* View_1 */,
+				045BCD3A223753420002AB6D /* View_2 */,
+				045BCD2F223638030002AB6D /* MemberCollLayout.h */,
+				045BCD30223638030002AB6D /* MemberCollLayout.m */,
+				045BCD2A22362D290002AB6D /* MemberCollItem.h */,
+				045BCD2B22362D290002AB6D /* MemberCollItem.m */,
+				045BCD2C22362D290002AB6D /* MemberCollItem.xib */,
+			);
+			path = item;
+			sourceTree = "<group>";
+		};
+		045BCD392237533B0002AB6D /* View_1 */ = {
+			isa = PBXGroup;
+			children = (
+				045BCD3B2237535E0002AB6D /* Card_1.h */,
+				045BCD3C2237535E0002AB6D /* Card_1.m */,
+				045BCD41223753870002AB6D /* Card_1.xib */,
+			);
+			path = View_1;
+			sourceTree = "<group>";
+		};
+		045BCD3A223753420002AB6D /* View_2 */ = {
+			isa = PBXGroup;
+			children = (
+				045BCD3E223753780002AB6D /* Card_2.h */,
+				045BCD3F223753780002AB6D /* Card_2.m */,
+				045BCD43223753940002AB6D /* Card_2.xib */,
+			);
+			path = View_2;
+			sourceTree = "<group>";
+		};
+		045BCD45223786170002AB6D /* 特权 */ = {
+			isa = PBXGroup;
+			children = (
+				045BCD462237868F0002AB6D /* MyCardTabView.h */,
+				045BCD472237868F0002AB6D /* MyCardTabView.m */,
+				045BCD49223786990002AB6D /* MyCardTabView.xib */,
+			);
+			path = "特权";
+			sourceTree = "<group>";
+		};
+		045BCD4B22378D490002AB6D /* 我的分享 */ = {
+			isa = PBXGroup;
+			children = (
+				045BCD4C22378D700002AB6D /* MyShareModel.h */,
+				045BCD4D22378D700002AB6D /* MyShareModel.m */,
+			);
+			path = "我的分享";
+			sourceTree = "<group>";
+		};
+		045BCD4F2237A0710002AB6D /* 我的分享 */ = {
+			isa = PBXGroup;
+			children = (
+				04190576222906B7007FE370 /* MyShareVC.h */,
+				04190577222906B7007FE370 /* MyShareVC.m */,
+				0419057922290840007FE370 /* view */,
+			);
+			path = "我的分享";
+			sourceTree = "<group>";
+		};
+		045BCD50223896D80002AB6D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				045BCD542238972A0002AB6D /* ExchangeJiFenView.h */,
+				045BCD552238972A0002AB6D /* ExchangeJiFenView.m */,
+				045BCD57223897390002AB6D /* ExchangeJiFenView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		045BCD592238E8980002AB6D /* 预约手术view */ = {
+			isa = PBXGroup;
+			children = (
+				045BCD5A2238E8BF0002AB6D /* YuYueSurgeryView.h */,
+				045BCD5B2238E8BF0002AB6D /* YuYueSurgeryView.m */,
+				045BCD5D2238E8D50002AB6D /* YuYueSurgeryView.xib */,
+			);
+			path = "预约手术view";
+			sourceTree = "<group>";
+		};
 		0465A51621BF686000AC054B /* 本地存储 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1140,6 +1473,7 @@
 			children = (
 				0467D61522153BD600233F5D /* 专属方案 */,
 				041905D8222E6479007FE370 /* 专属方案详细 */,
+				0427D96A222FB37400229E5F /* 支付成功 */,
 			);
 			path = "专属方案";
 			sourceTree = "<group>";
@@ -1147,6 +1481,8 @@
 		0467D61422153BBA00233F5D /* 我的服务 */ = {
 			isa = PBXGroup;
 			children = (
+				0427D97F2230B55300229E5F /* 我的服务 */,
+				0484E03F2233B44200EB0DDB /* 预约手术 */,
 			);
 			path = "我的服务";
 			sourceTree = "<group>";
@@ -1323,10 +1659,11 @@
 		046C7DFB21F9B57C00D542A1 /* 我的定制 - VC */ = {
 			isa = PBXGroup;
 			children = (
-				046C7E0A21FAB3B500D542A1 /* 方案效果图 */,
-				046C7E0B21FAB3C100D542A1 /* 推荐案例 */,
 				0427D94F222E77BA00229E5F /* MyPlanVC.h */,
 				0427D950222E77BA00229E5F /* MyPlanVC.m */,
+				046C7E0A21FAB3B500D542A1 /* 方案效果图 */,
+				046C7E0B21FAB3C100D542A1 /* 推荐案例 */,
+				0427D95A222F6EBE00229E5F /* 会员view */,
 			);
 			path = "我的定制 - VC";
 			sourceTree = "<group>";
@@ -1550,6 +1887,9 @@
 		0474C55821E44A4400189EF0 /* 数据中心 - Data */ = {
 			isa = PBXGroup;
 			children = (
+				045BCD4B22378D490002AB6D /* 我的分享 */,
+				0427D9972231156C00229E5F /* 我的服务模型 */,
+				0427D956222F5C0A00229E5F /* 我的定制模型 */,
 				0474C55C21E4760300189EF0 /* 数据模型Model */,
 				04830ABB21EC268600F29B16 /* 用户信息 */,
 			);
@@ -1559,7 +1899,6 @@
 		0474C55C21E4760300189EF0 /* 数据模型Model */ = {
 			isa = PBXGroup;
 			children = (
-				0427D952222E7B7D00229E5F /* 我的定制模型 */,
 				0474C55D21E4762100189EF0 /* RecommendModel.h */,
 				0474C55E21E4762100189EF0 /* RecommendModel.m */,
 			);
@@ -1821,6 +2160,56 @@
 			path = "用户信息";
 			sourceTree = "<group>";
 		};
+		0484E0392233690D00EB0DDB /* 不是会员 */ = {
+			isa = PBXGroup;
+			children = (
+				0484E03A2233694B00EB0DDB /* NotMemberView.h */,
+				0484E03B2233694B00EB0DDB /* NotMemberView.m */,
+				0484E03D2233695300EB0DDB /* NotMemberView.xib */,
+			);
+			path = "不是会员";
+			sourceTree = "<group>";
+		};
+		0484E03F2233B44200EB0DDB /* 预约手术 */ = {
+			isa = PBXGroup;
+			children = (
+				0484E0402233B49800EB0DDB /* YuYueSurgery.h */,
+				0484E0412233B49800EB0DDB /* YuYueSurgery.m */,
+				045BCD592238E8980002AB6D /* 预约手术view */,
+			);
+			path = "预约手术";
+			sourceTree = "<group>";
+		};
+		0484E0432233B95600EB0DDB /* 不是会员 */ = {
+			isa = PBXGroup;
+			children = (
+				0484E0442233B97B00EB0DDB /* MemberView_1.h */,
+				0484E0452233B97B00EB0DDB /* MemberView_1.m */,
+				0484E0472233B98400EB0DDB /* MemberView_1.xib */,
+			);
+			path = "不是会员";
+			sourceTree = "<group>";
+		};
+		0484E0492235F30900EB0DDB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0484E04A2235F33300EB0DDB /* PaySuccessCell.h */,
+				0484E04B2235F33300EB0DDB /* PaySuccessCell.m */,
+				0484E04C2235F33300EB0DDB /* PaySuccessCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0484E04F223608A900EB0DDB /* 是会员 */ = {
+			isa = PBXGroup;
+			children = (
+				045BCD362236498D0002AB6D /* MemberCollView.h */,
+				045BCD372236498D0002AB6D /* MemberCollView.m */,
+				045BCD2922362CE20002AB6D /* item */,
+			);
+			path = "是会员";
+			sourceTree = "<group>";
+		};
 		048E0B3722013FE0000578C2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1848,6 +2237,9 @@
 			children = (
 				048E0B4722017E76000578C2 /* MyCardVC.h */,
 				048E0B4822017E76000578C2 /* MyCardVC.m */,
+				0484E04F223608A900EB0DDB /* 是会员 */,
+				0484E0432233B95600EB0DDB /* 不是会员 */,
+				045BCD45223786170002AB6D /* 特权 */,
 			);
 			path = "我的会员";
 			sourceTree = "<group>";
@@ -2109,12 +2501,16 @@
 				0419056F2228FC8C007FE370 /* gif_17.png in Resources */,
 				041905712228FC8C007FE370 /* gif_8.png in Resources */,
 				0474C53721E3032400189EF0 /* MessageSendView.xib in Resources */,
+				045BCD2E22362D290002AB6D /* MemberCollItem.xib in Resources */,
 				0469E25421DC51090012874F /* TypeTabCell.xib in Resources */,
 				0467D645221A7F2B00233F5D /* DiaryItemCell.xib in Resources */,
 				04A6BD9421CDD18C00B8DBE0 /* CameraVC.xib in Resources */,
+				0427D972222FB44D00229E5F /* PaySuccessView.xib in Resources */,
 				046C7E0321F9B5EA00D542A1 /* MyPlanView_1.xib in Resources */,
+				045BCD42223753870002AB6D /* Card_1.xib in Resources */,
 				041ECC5D21F0540F000F3ABC /* PlanCustomizeCell.xib in Resources */,
 				0467D62F2216B18500233F5D /* AlreadySelectView.xib in Resources */,
+				0427D969222F783500229E5F /* NewPerferCell.xib in Resources */,
 				046C7D9321F2D00300D542A1 /* ImageEditCell.xib in Resources */,
 				041905652228FC8C007FE370 /* gif_15.png in Resources */,
 				04CF642D21ED8A2D00AC9EEB /* PhotosCell.xib in Resources */,
@@ -2124,14 +2520,18 @@
 				0443BC9F21DDCF4300646CE6 /* CaseDetailCell.xib in Resources */,
 				0419056C2228FC8C007FE370 /* gif_16.png in Resources */,
 				04190536222693B7007FE370 /* ExcSolCell.xib in Resources */,
+				0427D97B222FCC1300229E5F /* ServersView.xib in Resources */,
 				041905642228FC8C007FE370 /* gif_6.png in Resources */,
 				040BC28121BE3C080056810B /* LoginVC.xib in Resources */,
 				041905CC222CF929007FE370 /* MyPlanView_4.xib in Resources */,
+				0484E03E2233695300EB0DDB /* NotMemberView.xib in Resources */,
 				041905632228FC8C007FE370 /* gif_18.png in Resources */,
 				041905742228FC8C007FE370 /* gif_9.png in Resources */,
+				0427D9862230F59300229E5F /* ServersItem.xib in Resources */,
 				041905812229089E007FE370 /* MyShareView.xib in Resources */,
 				0474C57E21E5DB5400189EF0 /* CustomSearchDetailNavView.xib in Resources */,
 				04DA41D821BE6A5300DE0F67 /* Localizable.strings in Resources */,
+				045BCD44223753940002AB6D /* Card_2.xib in Resources */,
 				0419056D2228FC8C007FE370 /* gif_10.png in Resources */,
 				041905D2222D14B6007FE370 /* PerferView.xib in Resources */,
 				0467D6352217BA0600233F5D /* PhotosAddView.xib in Resources */,
@@ -2143,31 +2543,41 @@
 				0419059022291B75007FE370 /* MyShareItem.xib in Resources */,
 				041ECC5421EF0D2F000F3ABC /* PhotoAlbumCell.xib in Resources */,
 				041905702228FC8C007FE370 /* gif_14.png in Resources */,
+				0427D9A72232542800229E5F /* PayMethodView.xib in Resources */,
 				04C792CA21C7A2E40037280D /* SegmentCell.xib in Resources */,
 				041905A122292AE5007FE370 /* RecordCell.xib in Resources */,
 				0402788F220047D5005F6D9D /* MyHeaderView.xib in Resources */,
 				0474C54021E3336400189EF0 /* ReviewCell.xib in Resources */,
 				048E0B3C2201400E000578C2 /* MyCell_1.xib in Resources */,
+				045BCD58223897390002AB6D /* ExchangeJiFenView.xib in Resources */,
 				041905692228FC8C007FE370 /* gif_5.png in Resources */,
 				041905722228FC8C007FE370 /* gif_1.png in Resources */,
 				0469E23921D5F1100012874F /* HistoryCell.xib in Resources */,
 				046C7DF421F847F100D542A1 /* WatingPlanVC.xib in Resources */,
 				041905D7222E14C3007FE370 /* PerferCell.xib in Resources */,
+				045BCD4A223786990002AB6D /* MyCardTabView.xib in Resources */,
 				041905AD222A23B1007FE370 /* ExchangeView_2.xib in Resources */,
+				0427D964222F6F3D00229E5F /* CardView_2.xib in Resources */,
 				041905672228FC8C007FE370 /* gif_11.png in Resources */,
 				0443BC9921DDB52300646CE6 /* CaseMiddleView.xib in Resources */,
 				04CF641721EC7EEF00AC9EEB /* CustomNavView.xib in Resources */,
+				0427D9A0223237C100229E5F /* RechargeView.xib in Resources */,
 				041CF19D22150D5300D0C7BC /* EmptyView.xib in Resources */,
 				040BC24A21BE08F20056810B /* LaunchScreen.storyboard in Resources */,
 				0467D61E221559F100233F5D /* AddDiaryView.xib in Resources */,
 				04CF642721ED7FB400AC9EEB /* PhotosNavView.xib in Resources */,
+				0427D962222F6F3400229E5F /* CardView_1.xib in Resources */,
 				0419056B2228FC8C007FE370 /* gif_13.png in Resources */,
 				0455C49C21C34A5E0070EE6E /* WaterFlowCell.xib in Resources */,
+				0427D9962231075000229E5F /* ServerPlanListCell.xib in Resources */,
 				041905272223CC5B007FE370 /* ShareView.xib in Resources */,
 				046C7E1121FAB71200D542A1 /* MyPlanItem.xib in Resources */,
+				0427D98B2230FEFA00229E5F /* MessageView.xib in Resources */,
 				041905732228FC8C007FE370 /* gif_3.png in Resources */,
 				040BC24721BE08F20056810B /* Assets.xcassets in Resources */,
+				045BCD5E2238E8D50002AB6D /* YuYueSurgeryView.xib in Resources */,
 				048E0B4122014024000578C2 /* MyCell_2.xib in Resources */,
+				0484E04E2235F33300EB0DDB /* PaySuccessCell.xib in Resources */,
 				048E0B5722019588000578C2 /* PlanListCell.xib in Resources */,
 				0467D64B221AA30600233F5D /* DiaryCell.xib in Resources */,
 				041905682228FC8C007FE370 /* gif_2.png in Resources */,
@@ -2178,7 +2588,9 @@
 				041905B7222A2A20007FE370 /* ExchViewCell_2.xib in Resources */,
 				041905B2222A2A13007FE370 /* ExchViewCell_1.xib in Resources */,
 				0419056E2228FC8C007FE370 /* gif_7.png in Resources */,
+				0484E0482233B98400EB0DDB /* MemberView_1.xib in Resources */,
 				0467D6242216948C00233F5D /* DateView.xib in Resources */,
+				0484E0382233601B00EB0DDB /* PricesView.xib in Resources */,
 				041905C7222CF381007FE370 /* MyPlanView_3.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2270,6 +2682,8 @@
 				041905212223B658007FE370 /* ChangePhoneVC.m in Sources */,
 				04738FFB21FFF8F1009ADD7D /* FloatWindows.m in Sources */,
 				04C792C521C7A1BD0037280D /* TypeSegmentCVC.m in Sources */,
+				045BCD382236498D0002AB6D /* MemberCollView.m in Sources */,
+				0484E04D2235F33300EB0DDB /* PaySuccessCell.m in Sources */,
 				041ECC5C21F0540F000F3ABC /* PlanCustomizeCell.m in Sources */,
 				0443BCA521DE023E00646CE6 /* NetWork.m in Sources */,
 				0474C55B21E44A9400189EF0 /* RecommendHomePageData.m in Sources */,
@@ -2278,22 +2692,28 @@
 				048E0B4D22018321000578C2 /* PlanListVC.m in Sources */,
 				0430E9C021D20918006F5A5D /* GradientLabel.m in Sources */,
 				046C7DF321F847F100D542A1 /* WatingPlanVC.m in Sources */,
+				0427D95D222F6F2100229E5F /* CardView_1.m in Sources */,
 				046C7D8621F1D03300D542A1 /* AddImageView.m in Sources */,
 				040BC24D21BE08F20056810B /* main.m in Sources */,
 				0402788D220047C2005F6D9D /* MyHeaderView.m in Sources */,
+				0427D9952231075000229E5F /* ServerPlanListCell.m in Sources */,
 				046C7DFA21F85EB600D542A1 /* timecutdownView.m in Sources */,
+				0427D979222FCC0B00229E5F /* ServersView.m in Sources */,
 				046C7E2A21FEA6B500D542A1 /* ExcSolDetailData.m in Sources */,
 				0474C58121E5E4BB00189EF0 /* SearchDetailVCData.m in Sources */,
 				0465A51C21BF93F100AC054B /* UserService.m in Sources */,
 				04CF642C21ED8A2D00AC9EEB /* PhotosCell.m in Sources */,
-				0427D955222E7BC400229E5F /* MyDZModel.m in Sources */,
+				0427D959222F5C2400229E5F /* MyDZModel.m in Sources */,
 				04A6BD9B21CDE14800B8DBE0 /* UIScrollView+Cutter.m in Sources */,
 				041905CA222CF91A007FE370 /* MyPlanView_4.m in Sources */,
 				046C7DEC21F83C0500D542A1 /* NSString+RandomString.m in Sources */,
 				0419058A22291624007FE370 /* MyShareCell.m in Sources */,
+				045BCD562238972A0002AB6D /* ExchangeJiFenView.m in Sources */,
 				0467D644221A7F2B00233F5D /* DiaryItemCell.m in Sources */,
 				0474C58621E5F52000189EF0 /* AllMenuVC.m in Sources */,
+				0427D98F2231034000229E5F /* ServerPlanListView.m in Sources */,
 				041905BA222A2FB7007FE370 /* ProView.m in Sources */,
+				045BCD3D2237535E0002AB6D /* Card_1.m in Sources */,
 				046C7E1B21FAEB5C00D542A1 /* PhotosBrowserVC.m in Sources */,
 				04CF641D21ED7A1400AC9EEB /* PlanCustomizeVCData.m in Sources */,
 				04A6BD9521CDD18C00B8DBE0 /* CameraVC.m in Sources */,
@@ -2305,6 +2725,7 @@
 				041905A6222A2392007FE370 /* ExchangeView_1.m in Sources */,
 				0443BC9E21DDCF4300646CE6 /* CaseDetailCell.m in Sources */,
 				0474C57821E5D98E00189EF0 /* SearchDetailVC.m in Sources */,
+				0427D96D222FB39800229E5F /* PaySuccessVC.m in Sources */,
 				048E0B4922017E76000578C2 /* MyCardVC.m in Sources */,
 				041905A9222A239D007FE370 /* ExchangeView_2.m in Sources */,
 				041905C5222CD41F007FE370 /* MyPlanView_3.m in Sources */,
@@ -2315,8 +2736,11 @@
 				0474C59621E731A600189EF0 /* CaseVCData.m in Sources */,
 				046C7E2221FB073300D542A1 /* OneImagesVC.m in Sources */,
 				046C7DFE21F9B5A000D542A1 /* ExcSolDetailVC.m in Sources */,
+				0484E0422233B49800EB0DDB /* YuYueSurgery.m in Sources */,
+				045BCD5C2238E8BF0002AB6D /* YuYueSurgeryView.m in Sources */,
 				0474C55F21E4762100189EF0 /* RecommendModel.m in Sources */,
 				046C7D9221F2D00300D542A1 /* ImageEditCell.m in Sources */,
+				045BCD482237868F0002AB6D /* MyCardTabView.m in Sources */,
 				0474C53521E3031800189EF0 /* MessageSendView.m in Sources */,
 				0434B6E321C0ACC60053352A /* MyVC.m in Sources */,
 				0419059C22292A4D007FE370 /* ExchangeRecordVC.m in Sources */,
@@ -2329,9 +2753,14 @@
 				041905A022292AE5007FE370 /* RecordCell.m in Sources */,
 				0419051D22238D21007FE370 /* ChangeNameVC.m in Sources */,
 				0455C49021C3478F0070EE6E /* WaterFlowCollectionVC.m in Sources */,
+				0427D970222FB44400229E5F /* PaySuccessView.m in Sources */,
+				0427D99A223115AC00229E5F /* ServerModel.m in Sources */,
 				041ECC5721EF1A42000F3ABC /* PhotosCellVC.m in Sources */,
 				0419058F22291B75007FE370 /* MyShareItem.m in Sources */,
+				0427D960222F6F2C00229E5F /* CardView_2.m in Sources */,
+				0427D9892230FEF200229E5F /* MessageView.m in Sources */,
 				041905252223CC50007FE370 /* ShareView.m in Sources */,
+				045BCD4E22378D700002AB6D /* MyShareModel.m in Sources */,
 				041905C0222CC222007FE370 /* ExcSolDetailItemCell.m in Sources */,
 				0467D6222216947E00233F5D /* DateView.m in Sources */,
 				048E0B5622019588000578C2 /* PlanListCell.m in Sources */,
@@ -2346,26 +2775,35 @@
 				0474C55121E43E3000189EF0 /* CustomHomeNavView.m in Sources */,
 				0474C53F21E3336400189EF0 /* ReviewCell.m in Sources */,
 				0427D951222E77BA00229E5F /* MyPlanVC.m in Sources */,
+				0484E03C2233694B00EB0DDB /* NotMemberView.m in Sources */,
 				0474C56F21E5C79700189EF0 /* SearchVCData.m in Sources */,
 				048E0B4022014024000578C2 /* MyCell_2.m in Sources */,
 				041CF19B22150D3D00D0C7BC /* EmptyView.m in Sources */,
 				0419059822292909007FE370 /* ExchangeJiFenVC.m in Sources */,
 				040BC27A21BE34810056810B /* AFNetWork.m in Sources */,
+				045BCD31223638030002AB6D /* MemberCollLayout.m in Sources */,
 				04190578222906B7007FE370 /* MyShareVC.m in Sources */,
 				041905D6222E14C3007FE370 /* PerferCell.m in Sources */,
 				04C7923921C4940A0037280D /* AliyunOSSUpload.m in Sources */,
 				0474C53A21E323D300189EF0 /* ReviewData.m in Sources */,
 				048E0B51220184CA000578C2 /* PlanListData.m in Sources */,
+				045BCD40223753780002AB6D /* Card_2.m in Sources */,
 				046C7D9621F2F24600D542A1 /* DemandView.m in Sources */,
 				041905462227DF65007FE370 /* MJYFGifHeader.m in Sources */,
+				0427D9A52232541600229E5F /* PayMethodView.m in Sources */,
 				0419052A2226687B007FE370 /* ExcSolVC.m in Sources */,
 				046C7DF621F8505700D542A1 /* CustomNavView.m in Sources */,
+				0427D976222FCBF400229E5F /* ServersVC.m in Sources */,
 				04830ABE21EC26B100F29B16 /* UserData.m in Sources */,
 				0465A52021BF962800AC054B /* WeChat.m in Sources */,
+				045BCD2D22362D290002AB6D /* MemberCollItem.m in Sources */,
+				0427D99E223237B800229E5F /* RechargeView.m in Sources */,
 				0467D64A221AA30600233F5D /* DiaryCell.m in Sources */,
 				041905D0222D1474007FE370 /* PerferView.m in Sources */,
 				0474C52D21E2E8CC00189EF0 /* ShowIcon.m in Sources */,
+				0484E0462233B97B00EB0DDB /* MemberView_1.m in Sources */,
 				048E0B3B2201400E000578C2 /* MyCell_1.m in Sources */,
+				0427D968222F783500229E5F /* NewPerferCell.m in Sources */,
 				041CF197221509FD00D0C7BC /* MyDiaryVC.m in Sources */,
 				0419059422292671007FE370 /* ExchangeVC.m in Sources */,
 				0474C59021E729E400189EF0 /* CaseVC.m in Sources */,
@@ -2373,10 +2811,12 @@
 				0474C5A121E838F000189EF0 /* ZanData.m in Sources */,
 				041905B1222A2A13007FE370 /* ExchViewCell_1.m in Sources */,
 				0467D619221558A600233F5D /* AddDiaryVC.m in Sources */,
+				0484E0362233600600EB0DDB /* PricesView.m in Sources */,
 				04BB9E0421C9EA8C009E66D9 /* SearchHistoryVC.m in Sources */,
 				0474C56621E59C4300189EF0 /* SearchVC.m in Sources */,
 				048E0B4522017064000578C2 /* LoginData.m in Sources */,
 				0467D64F221E3C9700233F5D /* SettingVC.m in Sources */,
+				0427D9852230F59300229E5F /* ServersItem.m in Sources */,
 				0467D6282216A89D00233F5D /* SelectProjectVC.m in Sources */,
 				0455C49B21C34A5E0070EE6E /* WaterFlowCell.m in Sources */,
 				041ECC4D21EDE41B000F3ABC /* PhotosData.m in Sources */,

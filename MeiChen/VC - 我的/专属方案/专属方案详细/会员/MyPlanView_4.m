@@ -46,8 +46,8 @@
     self.detail_1.text = [NSString stringWithFormat:@"-￥%ld",str];
 }
 
-- (void)settingLab_1:(NSString *)str {
-    self.lab_1.text = [NSString stringWithFormat:@"%@%@%@",NSLocalizedString(@"MyPlanVC_20", nil),str,NSLocalizedString(@"MyPlanVC_21", nil)];
+- (void)settingLab_1:(NSInteger)str {
+    self.lab_1.text = [NSString stringWithFormat:@"%@%ld%@",NSLocalizedString(@"MyPlanVC_20", nil),str,NSLocalizedString(@"MyPlanVC_21", nil)];
 }
 
 - (void)settingPrice_1:(NSInteger)str {

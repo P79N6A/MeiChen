@@ -24,4 +24,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *bu_2;
 
+@property (weak, nonatomic) IBOutlet UIButton *bu_3;
+
+- (void)loadData:(CommissionStreamModel *)model;
+
 @end

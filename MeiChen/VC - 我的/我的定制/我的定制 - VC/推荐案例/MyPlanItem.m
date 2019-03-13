@@ -18,10 +18,14 @@
     return self;
 }
 
-
 - (void)awakeFromNib {
     [super awakeFromNib];
     
+}
+
+- (void)loadDataWith:(NSIndexPath *)indexPath model:(MyDZSampleModel *)model {
+    [self loadIcon:model.cover_img];
+    [self loadTitleLabel:model.brief];
 }
 
 - (void)loadIcon:(NSString *)url {

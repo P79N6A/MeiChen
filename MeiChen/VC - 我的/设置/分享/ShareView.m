@@ -70,7 +70,8 @@
 
 - (IBAction)ButtonMethod:(UIButton *)sender {
     if (self.index) {
-        self.index(sender.tag);
+        NSInteger tag = sender.tag;
+        self.index(tag);
     }
 }
 

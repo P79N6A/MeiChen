@@ -10,4 +10,6 @@
 
 @interface ExchangeJiFenVC : UIViewController
 
+@property (nonatomic) NSInteger jifen;
+
 @end

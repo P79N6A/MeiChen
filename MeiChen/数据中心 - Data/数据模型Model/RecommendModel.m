@@ -381,6 +381,7 @@
 }
 @end
 
+
 #pragma mark - 专属方案数据 - 专属方案详细
 @implementation PlanDetailModel
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
@@ -388,9 +389,10 @@
              @"order_id":@"order_id",
              @"total_price_origin":@"init_total_price",
              @"item":@"item",
-             @"has_card":@"has_card",
+             @"is_card_member":@"is_card_member",
+             @"has_card":@"has_card_calc",
              @"card_calc":@"card_calc",
-             @"has_coupon":@"has_coupon",
+             @"has_coupon":@"has_coupon_calc",
              @"coupons":@"coupons",
              @"coupon_calc":@"coupon_calc",
              @"total_deduct":@"total_deduct",
@@ -490,6 +492,45 @@
 }
 @end
 
+#pragma mark - 专属方案数据 - 手术列表
+@implementation SurgeryList
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{@"order_id":@"order_id",
+             @"surgery":@"surgery"
+             };
+}
++ (NSValueTransformer *)surgeryJSONTransformer {
+    return [MTLJSONAdapter arrayTransformerWithModelClass:[SurgeryListSurgery class]];
+}
+@end
+
+#pragma mark - 专属方案数据 - 手术列表 - items
+@implementation SurgeryListItem
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{@"order_id":@"order_id",
+             @"item_id":@"item_id",
+             @"real_time_fee":@"real_time_fee",
+             @"surgery_id":@"surgery_id",
+             @"item_name":@"item_name"
+             };
+}
+@end
+
+#pragma mark - 专属方案数据 - 手术列表 - surgery
+@implementation SurgeryListSurgery
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{@"order_id":@"order_id",
+             @"surgery_id":@"surgery_id",
+             @"is_allow_book":@"is_allow_book",
+             @"seq":@"seq",
+             @"doctor_id":@"doctor_id",
+             @"items":@"items"
+             };
+}
++ (NSValueTransformer *)itemsJSONTransformer {
+    return [MTLJSONAdapter arrayTransformerWithModelClass:[SurgeryListItem class]];
+}
+@end
 
 
 

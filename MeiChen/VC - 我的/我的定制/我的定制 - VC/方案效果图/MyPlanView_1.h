@@ -18,6 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *introduceLab;
 
+- (void)loadData:(MyDZListModel *)model;
 
 // 方案效果图
 - (void)titleLabel:(NSString *)str;

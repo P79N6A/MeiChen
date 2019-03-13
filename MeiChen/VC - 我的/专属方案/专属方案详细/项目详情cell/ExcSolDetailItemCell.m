@@ -39,6 +39,14 @@
     [self label_4:item.booking_num];
 }
 
+- (void)loadDataWithIndexPath:(NSIndexPath *)indexPath model:(MyDZListModel *)model {
+    [self iconImageView:model.item.cover_img];
+    [self label_1:model.item.item_name];
+    [self label_2:model.item.brief];
+    [self label_3:model.item.fee];
+    [self label_4:model.item.booking_num];
+}
+
 - (void)iconImageView:(NSString *)url {
     [self.icon sd_setImageWithURL:[NSURL URLWithString:url]];
 }

@@ -8,7 +8,8 @@
 
 #import "MyOrderVC.h"
 
-@interface MyOrderVC () <CustomNavViewDelegate, UITableViewDelegate, UITableViewDataSource>
+//UITableViewDelegate, UITableViewDataSource
+@interface MyOrderVC () <CustomNavViewDelegate>
 
 @property (nonatomic, strong) CustomNavView *navview;
 @property (nonatomic, strong) UITableView *tabview;

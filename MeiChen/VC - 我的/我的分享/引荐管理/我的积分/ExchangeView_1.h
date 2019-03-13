@@ -16,5 +16,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tabview;
 
+@property (nonatomic) NSInteger jifen;
 
 @end

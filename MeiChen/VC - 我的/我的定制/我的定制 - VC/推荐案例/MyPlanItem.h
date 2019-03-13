@@ -18,4 +18,6 @@
 
 - (void)loadTitleLabel:(NSString *)str;
 
+- (void)loadDataWith:(NSIndexPath *)indexPath model:(MyDZSampleModel *)model;
+
 @end

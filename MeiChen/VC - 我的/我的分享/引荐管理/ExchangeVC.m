@@ -26,8 +26,6 @@
     [self CreateUI];
 }
 
-
-
 #pragma mark - 创建UI
 - (void)CreateUI {
     self.view.backgroundColor = [UIColor whiteColor];
@@ -37,7 +35,6 @@
     self.navview.backgroundColor = [UIColor whiteColor];
     self.navview.delegate = self;
     self.navview.titleLab.text = NSLocalizedString(@"ExchangeVC_1", nil);
-//    self.navview.line.hidden = NO;
     [self.view addSubview:self.navview];
     
     NSArray *segArr = @[NSLocalizedString(@"ExchangeVC_3", nil),
@@ -99,8 +96,8 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)CustomNavView_RightItem:(UIButton *)sender {
-    NSLog(@"兑换");
     ExchangeJiFenVC *vc = [[ExchangeJiFenVC alloc]init];
+    vc.jifen = self.view_1.jifen;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

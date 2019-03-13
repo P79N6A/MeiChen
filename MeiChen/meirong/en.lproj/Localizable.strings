@@ -265,15 +265,45 @@
 "MyVC_12" = "建议项目";
 "MyVC_13" = "立即预约";
 
+// 支付成功
+"PaySuccessVC_1" = "支付成功";
+"PaySuccessVC_2" = "申请成功";
+"PaySuccessVC_3" = "我们已收到您的手术申请\n您的专属顾问24h内会与您取得联系";
+"PaySuccessVC_4" = "您的本次支付的专属方案由多个手术组成，且不可在同一时间完成，请选择您要预约的手术，手术顺序不可改变：";
+"PaySuccessVC_5" = "立即预约";
+"PaySuccessVC_6" = "待预约";
+"PaySuccessVC_7" = "您还有手术未完成，此手术暂不可预约";
+"PaySuccessVC_8" = "确定";
+"PaySuccessVC_9" = "";
+
+// 我的服务
+"ServersVC_1" = "我的服务";
+"ServersVC_2" = "距离手术还有";
+"ServersVC_3" = "天";
+"ServersVC_4" = "康复进程";
+"ServersVC_5" = "深呼吸";
+"ServersVC_6" = "深呼吸有助于帮助我们缓解压力和放松心情";
+"ServersVC_7" = "去完成";
+"ServersVC_8" = "康复计划";
+"ServersVC_9" = "规律的康复计划有助于帮助我们尽快恢复";
+"ServersVC_10" = "已完成";
+"ServersVC_11" = "专属方案";
+"ServersVC_12" = "进行中";
+"ServersVC_13" = "待预约";
+"ServersVC_14" = "手术";
+"ServersVC_15" = "美臣消息";
+"ServersVC_16" = "心情";
+
+
 // 我的会员
 "MyCardVC_1" = "兑换";
-"MyCardVC_2" = "";
-"MyCardVC_3" = "";
-"MyCardVC_4" = "";
-"MyCardVC_5" = "";
-"MyCardVC_6" = "";
-"MyCardVC_7" = "";
-"MyCardVC_8" = "";
+"MyCardVC_2" = "余额";
+"MyCardVC_3" = "积分";
+"MyCardVC_4" = "折扣";
+"MyCardVC_5" = "分享特权";
+"MyCardVC_6" = "积分兑换";
+"MyCardVC_7" = "特权兑换";
+"MyCardVC_8" = "优惠券";
 "MyCardVC_9" = "";
 "MyCardVC_10" = "";
 "MyCardVC_11" = "";
@@ -376,7 +406,21 @@
 "MyShareVC_7" = "您是尊贵的";
 "MyShareVC_8" = "您还不是会员";
 "MyShareVC_9" = "积分";
-
+"MyShareVC_10" = "次";
+"MyShareVC_11" = "去预约";
+"MyShareVC_12" = "已预约";
+"MyShareVC_13" = "分享有礼";
+"MyShareVC_14" = "好友完成手术";
+"MyShareVC_15" = "会员专享大礼包";
+"MyShareVC_16" = "赠送积分将累计到您的账户中";
+"MyShareVC_17" = "好友消费领取积分";
+"MyShareVC_18" = "好友消费您将立享优惠";
+"MyShareVC_19" = "去分享";
+"MyShareVC_20" = "去邀请";
+"MyShareVC_21" = "分";
+"MyShareVC_22" = "倍";
+"MyShareVC_23" = "您还没有兑换相关项目，";
+"MyShareVC_24" = "去兑换";
 
 // 引荐管理
 "ExchangeVC_1" = "引荐管理";
@@ -386,7 +430,7 @@
 "ExchangeVC_5" = "当前积分";
 "ExchangeVC_6" = "分";
 "ExchangeVC_7" = "积分详情";
-"ExchangeVC_8" = "手术项目";
+"ExchangeVC_8" = "手术项目：";
 "ExchangeVC_9" = "总消费";
 "ExchangeVC_10" = "元";
 "ExchangeVC_11" = "积分";
@@ -416,20 +460,42 @@
 "ExchangeJiFenVC_12" = "兑换积分";
 "ExchangeJiFenVC_13" = "正在审核";
 "ExchangeJiFenVC_14" = "已兑换";
-"ExchangeJiFenVC_15" = "";
-"ExchangeJiFenVC_16" = "";
-"ExchangeJiFenVC_17" = "";
+"ExchangeJiFenVC_15" = "请输入兑换数额";
+"ExchangeJiFenVC_16" = "银行卡号不正确";
+"ExchangeJiFenVC_17" = "请输入姓名";
 "ExchangeJiFenVC_18" = "";
 "ExchangeJiFenVC_19" = "";
 
 
+// 充值
+"ChongZhi_1" = "卡内余额不足，请先充值";
+"ChongZhi_2" = "注：一卡通充值必须以3000为单位，选择线下支付则不能享受一卡通优惠，更多支付问题您可以直接联系您的私人顾问。";
+"ChongZhi_3" = "x3000";
+"ChongZhi_4" = "线下支付";
+"ChongZhi_5" = "确定";
+"ChongZhi_6" = "选择支付方式";
+"ChongZhi_7" = "支付金额";
+"ChongZhi_8" = "微信";
+"ChongZhi_9" = "支付宝";
+"ChongZhi_10" = "购买一卡通";
+"ChongZhi_11" = "您还不是会员，请选择支付方式";
+"ChongZhi_12" = "注：购买一卡通将享受专属优惠，包括会员折扣、消费积分等权益，您也可以选择线下结算尾款，更多支付问题您可以直接联系您的私人顾问。";
 
-
-
-
-
-
-
+// 预约手术
+"YuYueSurgery_1" = "预约手术";
+"YuYueSurgery_2" = "日期";
+"YuYueSurgery_3" = "时间";
+"YuYueSurgery_4" = "增值服务";
+"YuYueSurgery_5" = "提交后请等待客服与您联系";
+"YuYueSurgery_6" = "确定";
+"YuYueSurgery_7" = "更多日期";
+"YuYueSurgery_8" = "专车";
+"YuYueSurgery_9" = "食宿";
+"YuYueSurgery_10" = "今天";
+"YuYueSurgery_11" = "明天";
+"YuYueSurgery_12" = "后天";
+"YuYueSurgery_" = "";
+"YuYueSurgery_" = "";
 
 
 

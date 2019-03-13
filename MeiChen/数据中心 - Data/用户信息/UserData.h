@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RecommendModel.h"
 
 @interface UserData : NSObject
 
@@ -16,7 +17,6 @@
 
 #pragma mark - 获取用户信息
 - (void)requestUserData:(void (^)(NSError *error))callbacks;
-
 
 
 @end

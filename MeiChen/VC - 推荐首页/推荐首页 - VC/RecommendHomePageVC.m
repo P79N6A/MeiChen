@@ -47,11 +47,13 @@
     self.data.delegate = self;
     __weak typeof(self) weakSelf = self;
     [self.data RequestHotCaseWithPull:^(NSError *error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            // 加载瀑布流
-            [weakSelf loadWaterFlowCollectionVC];
-            [weakSelf.typeSegCVC reloadTypeSegmentCVCData:[self.data MenuArray]];
-        });
+        if (error == nil) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                // 加载瀑布流
+                [weakSelf loadWaterFlowCollectionVC];
+                [weakSelf.typeSegCVC reloadTypeSegmentCVCData:[self.data MenuArray]];
+            });
+        }
     }];
     
     self.zandata = [[ZanData alloc]init];
@@ -284,11 +286,13 @@
     NSLog(@"重新加载 热门数据");
     __weak typeof(self) weakSelf = self;
     [self.data RequestHotCaseWithPull:^(NSError *error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            // 加载瀑布流
-            [weakSelf loadWaterFlowCollectionVC];
-            [weakSelf.typeSegCVC reloadTypeSegmentCVCData:[self.data MenuArray]];
-        });
+        if (error == nil) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                // 加载瀑布流
+                [weakSelf loadWaterFlowCollectionVC];
+                [weakSelf.typeSegCVC reloadTypeSegmentCVCData:[self.data MenuArray]];
+            });
+        }
     }];
     self.reloadButton.hidden = YES;
 }

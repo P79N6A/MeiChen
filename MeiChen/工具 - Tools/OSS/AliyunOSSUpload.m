@@ -91,7 +91,7 @@ static AliyunOSSUpload *_instance;
 
 - (void)updateToALi:(NSData *)data imageName:(NSString *)imageName
 {
-    CGFloat kb = [data length] / 1024.0 / 1024.0;
+//    CGFloat kb = [data length] / 1024.0 / 1024.0;
     //NSLog(@"kb = %.2lf",kb);
     
     OSSPutObjectRequest * put = [OSSPutObjectRequest new];

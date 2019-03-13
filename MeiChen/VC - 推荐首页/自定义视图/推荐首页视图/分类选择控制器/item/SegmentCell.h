@@ -15,7 +15,7 @@
 
 @property (strong, nonatomic) UIView *bgView;
 
-- (void)colorLayerWithText:(NSString *)text font:(UIFont *)font is:(BOOL)is;
+//- (void)colorLayerWithText:(NSString *)text font:(UIFont *)font is:(BOOL)is;
 
 - (void)colorLayer:(UIView *)view ;
 

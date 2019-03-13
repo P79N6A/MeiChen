@@ -27,11 +27,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *tf;
 
-@property (weak, nonatomic) IBOutlet UILabel *price_1;
-@property (weak, nonatomic) IBOutlet UILabel *price_2;
-
-@property (weak, nonatomic) IBOutlet UIButton *pay;
-
 - (void)loadDataWith:(PlanDetailModel *)model;
 
 @end

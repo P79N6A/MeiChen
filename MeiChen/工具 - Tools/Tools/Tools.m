@@ -82,13 +82,15 @@ static Tools *_instance;
 }
 
 + (void)jumpToLogin:(NSString *)string {
-    [SVProgressHUD showInfoWithStatus:string];
-    [[UserDefaults shareInstance] WriteAccessTokenWith:nil];
-    UIWindow *windows = [UIApplication sharedApplication].keyWindow;
-    LoginVC *vc = [[LoginVC alloc]init];
-    vc.autoAuthorization = NO;
-    windows.rootViewController = vc;
-    [windows makeKeyAndVisible];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [SVProgressHUD showInfoWithStatus:string];
+        [[UserDefaults shareInstance] WriteAccessTokenWith:nil];
+        UIWindow *windows = [UIApplication sharedApplication].keyWindow;
+        LoginVC *vc = [[LoginVC alloc]init];
+        vc.autoAuthorization = NO;
+        windows.rootViewController = vc;
+        [windows makeKeyAndVisible];
+    });
 }
 
 /** 分享 */
@@ -163,5 +165,44 @@ static Tools *_instance;
     return [string boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
 }
 
+// 判断卡号
++ (BOOL)checkBankCardNumber:(NSString *)cardNumber
+{
+    int oddSum = 0;     // 奇数和
+    int evenSum = 0;    // 偶数和
+    int allSum = 0;     // 总和
+    
+    // 循环加和
+    for (NSInteger i = 1; i <= cardNumber.length; i++)
+    {
+        NSString *theNumber = [cardNumber substringWithRange:NSMakeRange(cardNumber.length-i, 1)];
+        int lastNumber = [theNumber intValue];
+        if (i%2 == 0)
+        {
+            // 偶数位
+            lastNumber *= 2;
+            if (lastNumber > 9)
+            {
+                lastNumber -=9;
+            }
+            evenSum += lastNumber;
+        }
+        else
+        {
+            // 奇数位
+            oddSum += lastNumber;
+        }
+    }
+    allSum = oddSum + evenSum;
+    // 是否合法
+    if (allSum%10 == 0)
+    {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
+}
 
 @end

@@ -98,8 +98,8 @@
     PlanStyleModel *topcatModel = _topcatArray[k2];
     
     NSMutableDictionary *m_dic = [NSMutableDictionary dictionary];
-    m_dic[@"style_tag_id"] = topcatModel.tag_id;
-    m_dic[@"part_tag_id"] = styleModel.tag_id;
+    m_dic[@"style_tag_id"] = styleModel.tag_id;
+    m_dic[@"part_tag_id"] = topcatModel.tag_id;
     NSInteger page;
     if (self.ListArrays.count == 0 || self.ListArrays.count < self.currentStyleIndex) {
         page = 1;

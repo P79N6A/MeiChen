@@ -21,6 +21,77 @@
     if (self = [super init]) {
         net = [[NetWork alloc]init];
         OnePageCount = 10;      // 一页十条数据
+        __weak typeof(self) weakSelf = self;
+        // 会员充值
+        self.showview = [[RechargeView alloc]init];
+        self.showview.index = ^(NSString *price) {
+            if (price!=nil) {
+                weakSelf.isPayOffLine = NO;
+                [weakSelf.showview hide:NO];
+                [weakSelf.payview loadPrice:price];
+                [weakSelf.payview show];
+            }
+            else {
+                NSLog(@"线下支付");
+                weakSelf.isPayOffLine = YES;
+                [weakSelf.showview hide:YES];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(MyPlanData_PayOffline)]) {
+                        [weakSelf.delegate MyPlanData_PayOffline];
+                    }
+                });
+            }
+        };
+        
+        // 支付方式选择
+        self.payview = [[PayMethodView alloc]init];
+        self.payview.blockprice = ^(NSString *price) {
+            if (price!=nil) {
+                [weakSelf.showview show];
+            }
+            else {
+                [weakSelf.showview hide:YES];
+            }
+        };
+        self.payview.recharge = ^(NSError *error) {
+            if (error == nil) {
+                [weakSelf.payview hide];
+                [weakSelf.showview hide:YES];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(MyPlanData_UpdateData)]) {
+                        [weakSelf.delegate MyPlanData_UpdateData];
+                    }
+                });
+            }
+            else {
+                [SVProgressHUD showErrorWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
+            }
+        };
+        
+        // 不是会员
+        self.notView = [[NotMemberView alloc]init];
+        self.notView.index = ^(NSInteger tag) {
+            if (tag == 0) {
+                NSLog(@"线下支付");
+                weakSelf.isPayOffLine = YES;
+                [weakSelf.notView hide:YES];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(MyPlanData_PayOffline)]) {
+                        [weakSelf.delegate MyPlanData_PayOffline];
+                    }
+                });
+            }
+            else {
+                weakSelf.isPayOffLine = NO;
+                // 购买一卡通
+                [weakSelf.notView hide:YES];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(MyPlanData_BuyCard)]) {
+                        [weakSelf.delegate MyPlanData_BuyCard];
+                    }
+                });
+            }
+        };
     }
     return self;
 }
@@ -34,6 +105,13 @@
     m_dic[@"is_coupon_deduct"] = coupon_deduct?@"1":@"0";
     m_dic[@"coupon"] = array;
     m_dic[@"remark"] = text;
+    if (self.isPayOffLine) {
+        m_dic[@"is_pay_offline"] = @"1";
+    }
+    else {
+        m_dic[@"is_pay_offline"] = @"0";
+    }
+    
     [net requestWithUrl:@"order/do-submit" Parames:m_dic Success:^(id responseObject) {
         [self ParsingPayData:responseObject];
     } Failure:^(NSError *error) {
@@ -137,17 +215,17 @@
     coupon_3.value = @"150";
     
     PlanDetailCoupons *coupons_1 = [[PlanDetailCoupons alloc]init];
-    coupons_1.is_gray = @"0";
+    coupons_1.is_gray = 0;
     coupons_1.coupon = coupon_1;
     coupons_1.coupon_id = @"1";
     
     PlanDetailCoupons *coupons_2 = [[PlanDetailCoupons alloc]init];
-    coupons_2.is_gray = @"0";
+    coupons_2.is_gray = 0;
     coupons_2.coupon = coupon_2;
     coupons_2.coupon_id = @"2";
     
     PlanDetailCoupons *coupons_3 = [[PlanDetailCoupons alloc]init];
-    coupons_3.is_gray = @"1";
+    coupons_3.is_gray = 1;
     coupons_3.coupon = coupon_3;
     coupons_3.coupon_id = @"3";
     
@@ -229,7 +307,8 @@
                         cardcalc_7,cardcalc_8,cardcalc_9,
                         cardcalc_10];
     
-    model.has_card = 1;
+    model.has_card = 0;
+    model.is_card_member = 0;
     
     // 优惠券统计
     model.coupon_calc = @[calc_1,calc_2];
@@ -251,19 +330,26 @@
         NSInteger code = [responseObject[@"code"] integerValue];
         switch (code) {
             case 0: {
-                [Tools JumpToLoginVC:responseObject];
+                if (![Tools JumpToLoginVC:responseObject]) {
+                    NSDictionary *data = [NSDictionary dictionaryWithDictionary:responseObject[@"data"]];
+                    if ([data[@"is_pay_offline"] integerValue] == 1) {
+                        [self PaySuccess];
+                        return;
+                    }
+                }
                 break;
             }
             case 1: {
                 NSDictionary *data = [NSDictionary dictionaryWithDictionary:responseObject[@"data"]];
                 if ([data[@"charge"] integerValue] == 1) {
+                    [SVProgressHUD dismiss];
                     // 账户余额不足,请充值
+                    [self.showview show];
+                    return;
                 }
-                else {
-                    
-                }
+                NSLog(@"支付成功");
                 [SVProgressHUD showSuccessWithStatus:responseObject[@"message"]];
-//                [self PaySuccess];
+                [self PaySuccess];
                 return;
                 break;
             }

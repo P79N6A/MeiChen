@@ -41,6 +41,13 @@
     [self introduceLabel:[NSString string]];
 }
 
+- (void)loadData:(MyDZListModel *)model {
+    [self titleLabel:NSLocalizedString(@"MyPlanVC_2", nil)];
+    [self imageView_1:model.pre_img];
+    [self imageView_2:model.done_img];
+    [self introduceLabel:model.scheme];
+}
+
 // 方案效果图
 - (void)titleLabel:(NSString *)str {
     self.titleLab.text = str;

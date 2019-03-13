@@ -19,7 +19,6 @@ static NSString *identifier = @"CellItem";
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self = [[[NSBundle mainBundle] loadNibNamed:@"MyPlanView_2" owner:nil options:nil] firstObject];
-//        defaultHeight = 142;//329;
         self.frame = ({
             CGRect rect = frame;
             rect.size.height = 142;
@@ -34,12 +33,15 @@ static NSString *identifier = @"CellItem";
     [super awakeFromNib];
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
     self.collView.collectionViewLayout = layout;
     self.collView.delegate = self;
     self.collView.dataSource = self;
     self.collView.alwaysBounceVertical = YES;
+    self.collView.bounces = NO;
+    self.collView.showsVerticalScrollIndicator = NO;
+    self.collView.showsHorizontalScrollIndicator = NO;
     self.collView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     [self.collView registerClass:[MyPlanItem class] forCellWithReuseIdentifier:identifier];
     self.collView.backgroundColor = [UIColor clearColor];
@@ -53,6 +55,11 @@ static NSString *identifier = @"CellItem";
     self.titleLab.backgroundColor = [UIColor clearColor];
 }
 
+- (void)setM_array:(NSMutableArray *)m_array {
+    _m_array = [NSMutableArray arrayWithArray:m_array];
+    [self.collView reloadData];
+}
+
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
@@ -62,6 +69,7 @@ static NSString *identifier = @"CellItem";
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     MyPlanItem *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    [cell loadDataWith:indexPath model:self.m_array[indexPath.row]];
     return cell;
 }
 

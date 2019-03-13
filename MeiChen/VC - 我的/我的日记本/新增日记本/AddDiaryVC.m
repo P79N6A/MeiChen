@@ -275,10 +275,10 @@
             mess = [NSString stringWithFormat:@"%@",responseObject[@"message"]];
         }
         NSError *error = [NSError errorWithDomain:@"" code:-101 userInfo:@{NSLocalizedDescriptionKey:mess}];
-        [SVProgressHUD showInfoWithStatus:error.description];
+        [SVProgressHUD showInfoWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
         
     } Failure:^(NSError *error) {
-        [SVProgressHUD showInfoWithStatus:error.description];
+        [SVProgressHUD showInfoWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
     }];
 }
 
@@ -419,10 +419,10 @@
             mess = [NSString stringWithFormat:@"%@",responseObject[@"message"]];
         }
         NSError *error = [NSError errorWithDomain:@"" code:-101 userInfo:@{NSLocalizedDescriptionKey:mess}];
-        [SVProgressHUD showInfoWithStatus:error.description];
+        [SVProgressHUD showInfoWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
         
     } Failure:^(NSError *error) {
-        [SVProgressHUD showErrorWithStatus:error.description];
+        [SVProgressHUD showErrorWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
     }];
 }
 
@@ -461,10 +461,10 @@
             mess = [NSString stringWithFormat:@"%@",responseObject[@"message"]];
         }
         NSError *error = [NSError errorWithDomain:@"" code:-101 userInfo:@{NSLocalizedDescriptionKey:mess}];
-        [SVProgressHUD showInfoWithStatus:error.description];
+        [SVProgressHUD showInfoWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
         
     } Failure:^(NSError *error) {
-        [SVProgressHUD showInfoWithStatus:error.description];
+        [SVProgressHUD showInfoWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
     }];
 }
 // 新增一篇日记
@@ -618,10 +618,10 @@
             mess = [NSString stringWithFormat:@"%@",responseObject[@"message"]];
         }
         NSError *error = [NSError errorWithDomain:@"" code:-101 userInfo:@{NSLocalizedDescriptionKey:mess}];
-        [SVProgressHUD showInfoWithStatus:error.description];
+        [SVProgressHUD showInfoWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
         
     } Failure:^(NSError *error) {
-        [SVProgressHUD showInfoWithStatus:error.description];
+        [SVProgressHUD showInfoWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
     }];
 }
 

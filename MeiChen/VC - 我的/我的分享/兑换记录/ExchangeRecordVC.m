@@ -74,9 +74,8 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)CustomNavView_RightItem:(UIButton *)sender {
-    NSLog(@"记录");
-}
 
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

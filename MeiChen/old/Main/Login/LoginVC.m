@@ -333,7 +333,7 @@
                         [self jumpToHomePage];
                     }
                     else {
-                        [SVProgressHUD showErrorWithStatus:error.description];
+                        [SVProgressHUD showErrorWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
                         self.backImv.hidden = YES;
                     }
                 }];
@@ -387,7 +387,7 @@
                     [self jumpToHomePage];
                 }
                 else {
-                    [SVProgressHUD showErrorWithStatus:error.description];
+                    [SVProgressHUD showErrorWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
                     self.backImv.hidden = YES;
                 }
             }];
@@ -486,7 +486,7 @@
 //            NSLog(@"获取首页 热门案例分类 success");
 //        }
 //        else {
-//            [SVProgressHUD showErrorWithStatus:error.description];
+//            [SVProgressHUD showErrorWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
 //        }
 //    }];
 }
@@ -502,7 +502,7 @@
 //            NSLog(@"获取 标签搜索案例 success");
 //        }
 //        else {
-//            [SVProgressHUD showErrorWithStatus:error.description];
+//            [SVProgressHUD showErrorWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
 //        }
 //    }];
 }

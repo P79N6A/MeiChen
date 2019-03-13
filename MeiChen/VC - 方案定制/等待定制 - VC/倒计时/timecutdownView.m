@@ -35,6 +35,7 @@
         self.label = [[UILabel alloc]init];
         self.label.textColor = [UIColor whiteColor];
         self.label.textAlignment = NSTextAlignmentCenter;
+        linewidth = 10;
         [self addSubview:self.label];
     }
     return self;
@@ -44,9 +45,8 @@
 - (void)circleProgressView {
     view_w = self.frame.size.width;
     view_h = self.frame.size.height;
-    linewidth = 10;
     radius = view_w / 2.0 - linewidth / 2.0;
-    imv_w = 20;
+    imv_w = 2*linewidth;
     self.label.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     
     UIBezierPath *circle = [UIBezierPath bezierPathWithArcCenter:CGPointMake(view_w/2.0, view_h/2.0) radius:radius startAngle:kDegreesToRadians(270) endAngle:kDegreesToRadians(270) + kDegreesToRadians(360) clockwise:YES];
@@ -75,7 +75,7 @@
     self.proShapeLayer.lineJoin = kCALineJoinRound;
     [self.layer addSublayer:self.proShapeLayer];
     
-    CGFloat linewidth2 = 4.0;
+    CGFloat linewidth2 = imv_w/2.0*0.4;
     CGFloat radius2 = imv_w / 2.0 - linewidth2 / 2.0;
     UIBezierPath *circle_2 = [UIBezierPath bezierPathWithArcCenter:CGPointMake(imv_w/2.0, imv_w/2.0) radius:radius2 startAngle:kDegreesToRadians(270) endAngle:kDegreesToRadians(270) + kDegreesToRadians(360) clockwise:YES];
     self.circleLayer = [CAShapeLayer layer];
@@ -86,6 +86,19 @@
     self.circleLayer.strokeStart = 0.0f;
     self.circleLayer.strokeEnd = 1.0f;
     [self.layer addSublayer:self.circleLayer];
+}
+
+- (void)SettingLabStr:(NSString *)str {
+    self.label.text = str;
+}
+
+- (void)SettingProgress:(CGFloat)pro {
+    self.proShapeLayer.strokeEnd = pro;
+    self.circleLayer.frame = [self getEndPointFrameWithProgress:pro];
+}
+
+- (void)settingLineWidth:(CGFloat)linew {
+    linewidth = linew;
 }
 
 #pragma mark - 设置进度,自动转圈圈

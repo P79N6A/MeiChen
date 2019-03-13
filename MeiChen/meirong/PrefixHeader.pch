@@ -29,10 +29,15 @@
 #import "EmptyView.h"
 #import "MJYFGifHeader.h"
 #import "MJYFGifFooter.h"
+#import "RechargeView.h"    // 会员充值
+#import "PayMethodView.h"   // 支付方式
+#import "NotMemberView.h"   // 不是会员
 
 // 2、数据模型头文件
-#import "MyDZModel.h"   // 我的定制
+#import "MyDZModel.h"   // 我的定制模型
 #import "RecommendModel.h"
+#import "ServerModel.h" // 我的服务模型
+#import "MyShareModel.h"    // 我的分享
 
 
 // 3、第三方库/sdk头文件

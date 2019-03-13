@@ -236,6 +236,8 @@
 @property (nonatomic, strong) PlanItemModel *item;
 @end
 
+
+
 #pragma mark - 定制列表数据 - 单个定制数据 - item
 @interface PlanItemModel : MTLModel <MTLJSONSerializing>
 @property (nonatomic, strong) NSString *item_name;
@@ -258,6 +260,7 @@
 @property (nonatomic, strong) NSString *order_id;
 @property (nonatomic, strong) NSString *total_price_origin;
 @property (nonatomic, copy) NSArray *item;
+@property (nonatomic) NSInteger is_card_member;
 @property (nonatomic) NSInteger has_card;
 @property (nonatomic, copy) NSArray *card_calc;
 @property (nonatomic) NSInteger has_coupon;
@@ -298,7 +301,7 @@
 @property (nonatomic, strong) NSString *expire_on;
 @property (nonatomic, strong) NSString *order_id;
 @property (nonatomic, strong) PlanDetailCouponsCoupon *coupon;
-@property (nonatomic, strong) NSString *is_gray;
+@property (nonatomic) NSInteger is_gray;
 @end
 
 #pragma mark - 专属方案数据 - 专属方案详细 - coupons
@@ -320,8 +323,38 @@
 @interface PlanDetailCouponCalc : MTLModel <MTLJSONSerializing>
 @property (nonatomic, strong) NSString *remark;
 @property (nonatomic, strong) NSString *key;
-@property (nonatomic, strong) NSString *val;
+@property (nonatomic) NSInteger val;
 @end
+
+#pragma mark - 专属方案数据 - 手术列表
+@interface SurgeryList : MTLModel <MTLJSONSerializing>
+@property (nonatomic, strong) NSString *order_id;
+@property (nonatomic, copy) NSArray *surgery;
+@end
+
+#pragma mark - 专属方案数据 - 手术列表 - items
+@interface SurgeryListItem : MTLModel <MTLJSONSerializing>
+@property (nonatomic, strong) NSString *order_id;
+@property (nonatomic, strong) NSString *item_id;
+@property (nonatomic, strong) NSString *real_time_fee;
+@property (nonatomic, strong) NSString *surgery_id;
+@property (nonatomic, strong) NSString *item_name;
+@end
+
+#pragma mark - 专属方案数据 - 手术列表 - surgery
+@interface SurgeryListSurgery : MTLModel <MTLJSONSerializing>
+@property (nonatomic, strong) NSString *order_id;
+@property (nonatomic, strong) NSString *surgery_id;
+@property (nonatomic, strong) NSString *is_allow_book;
+@property (nonatomic, strong) NSString *seq;
+@property (nonatomic, strong) NSString *doctor_id;
+@property (nonatomic, copy) NSArray *items;
+@end
+
+
+
+
+
 
 
 

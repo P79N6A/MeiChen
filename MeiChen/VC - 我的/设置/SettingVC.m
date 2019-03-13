@@ -313,7 +313,7 @@
                         [self.tabview reloadData];
                     }
                     else {
-                        [SVProgressHUD showInfoWithStatus:error.description];
+                        [SVProgressHUD showInfoWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
                     }
                 }];
                 return;
@@ -327,10 +327,10 @@
             mess = [NSString stringWithFormat:@"%@",responseObject[@"message"]];
         }
         NSError *error = [NSError errorWithDomain:@"" code:-101 userInfo:@{NSLocalizedDescriptionKey:mess}];
-        [SVProgressHUD showInfoWithStatus:error.description];
+        [SVProgressHUD showInfoWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
         
     } Failure:^(NSError *error) {
-        [SVProgressHUD showInfoWithStatus:error.description];
+        [SVProgressHUD showInfoWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
     }];
 }
 

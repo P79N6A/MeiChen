@@ -245,7 +245,7 @@
 - (void)requestMyDiaryFail:(NSError *)error addmore:(BOOL)addmore {
     dispatch_async(dispatch_get_main_queue(), ^{
         if (!addmore) {
-            [SVProgressHUD showErrorWithStatus:error.description];
+            [SVProgressHUD showErrorWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
         }
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         [_refreshControl endRefreshing];
@@ -330,10 +330,10 @@
             mess = [NSString stringWithFormat:@"%@",responseObject[@"message"]];
         }
         NSError *error = [NSError errorWithDomain:@"" code:-101 userInfo:@{NSLocalizedDescriptionKey:mess}];
-        [SVProgressHUD showInfoWithStatus:error.description];
+        [SVProgressHUD showInfoWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
         
     } Failure:^(NSError *error) {
-        [SVProgressHUD showInfoWithStatus:error.description];
+        [SVProgressHUD showInfoWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
     }];
 }
 

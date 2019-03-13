@@ -346,7 +346,7 @@
             mess = [NSString stringWithFormat:@"%@",responseObject[@"message"]];
         }
         NSError *error = [NSError errorWithDomain:@"" code:-101 userInfo:@{NSLocalizedDescriptionKey:mess}];
-        [SVProgressHUD showErrorWithStatus:error.description];
+        [SVProgressHUD showErrorWithStatus:error.userInfo[NSLocalizedDescriptionKey]];
         
     } Failure:^(NSError *error) {
         [SVProgressHUD dismiss];

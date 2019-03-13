@@ -37,7 +37,7 @@
             self.select.selected = YES;
         }
     }
-    if ([item.is_gray integerValue] == 1) {
+    if (item.is_gray == 1) {
         self.backBu.hidden = NO;
         self.select.selected = NO;
     }
